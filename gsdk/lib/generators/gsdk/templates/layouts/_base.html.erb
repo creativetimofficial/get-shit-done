@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Get Shit Done Kit by Creative Tim</title>
+
+    <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' %>
+    <%= stylesheet_link_tag '//fonts.googleapis.com/css?family=Grand+Hotel|Open+Sans:400,300' %>
+
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag "//google-code-prettify.googlecode.com/svn/loader/run_prettify.js" %>
+
+    <%= yield :style %>
+  </head>
+  <body data-features="<%= yield :features %>" class="<%= yield :class %>">
+
+    <%= yield %>
+
+  </body>
+</html>

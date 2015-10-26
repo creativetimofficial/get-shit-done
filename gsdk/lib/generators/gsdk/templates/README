@@ -1,0 +1,44 @@
+===============================================================================
+
+  ____      _   ____  _     _ _   ____
+ / ___| ___| |_/ ___|| |__ (_) |_|  _ \  ___  _ __   ___
+| |  _ / _ \ __\___ \| '_ \| | __| | | |/ _ \| '_ \ / _ \
+| |_| |  __/ |_ ___) | | | | | |_| |_| | (_) | | | |  __/
+ \____|\___|\__|____/|_| |_|_|\__|____/ \___/|_| |_|\___|
+
+Hooray, you just installed Get Shit Done in your rails app!!
+
+If you curious what the install generator done so far, actually, it created the
+following layout, css and js files in your app:
+
+  * app/views/layouts/_base.html.erb
+  * app/assets/stylesheets/gsdk.css
+  * app/assets/javascripts/gsdk.js
+
+Also, it added require directive to require gsdk.css and gsdk.js from
+following manifest files:
+
+  * app/assets/stylesheets/application.css
+  * app/assets/javascripts/application.js
+
+Some setup you must do manually if you haven't yet
+
+  * Ensure app/assets/stylesheets/gsdk.css is loaded in application.css
+    with `require_tree .` or `require gsdk`.
+
+  * Ensure `require gsdk` has been added to
+    app/assets/javascripts/application.js.
+
+  * Ensure you have defined root_url to *something* in your config/routes.rb.
+    For example:
+
+      root to: "home#index"
+
+  * If you are deploying on Heroku with Rails 3.2 only, you may want to set:
+
+      config.assets.initialize_on_precompile = false
+
+    On config/application.rb forcing your application to not access the DB or
+    load models when precompiling your assets.
+
+===============================================================================
