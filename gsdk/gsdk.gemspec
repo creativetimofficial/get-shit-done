@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Get Shit Done for Rails Version}
   spec.description   = %q{Get Shit Done for Rails Version is a rubygems. Packed with useful rails generators to generate your rails view in no time. One more thing, it's production ready, so no need to worry about the assets pipeline issues on production server anymore.}
-  spec.homepage      = "https://github.com/timcreative/get-shit-done/tree/master/gsdk"
+  spec.homepage      = "https://uiready.io/items/get-shit-done-rails-version"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.
