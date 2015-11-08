@@ -22,6 +22,8 @@ Remove any bootstrap from existing rails app
 
 If you want to integrate existing rails app, please make sure you have remove all the Bootstrap gems such as [twitter-bootstrap-rails](https://github.com/seyhunak/twitter-bootstrap-rails), [bootstrap-rails](https://github.com/anjlab/bootstrap-rails), [bootstrap-sass](https://github.com/twbs/bootstrap-sass), [less-rails-bootstrap](https://github.com/metaskills/less-rails-bootstrap) or any Bootstrap related stylesheets and javascript from your rails app. As Get Shit Done (Rails Version) already contain its own version of Bootstrap.
 
+[Back to top](#table-of-content)
+
 ## Installation
 
 1. Create a new rails application from terminal
@@ -61,6 +63,8 @@ If you want to integrate existing rails app, please make sure you have remove al
 
   * app/assets/stylesheets/application.css
   * app/assets/javascripts/application.js
+
+[Back to top](#table-of-content)
 
 ## Theme Structure In Rails
 
@@ -144,6 +148,8 @@ It is the manifest file using sprockets require directives to require all Get Sh
 
 It is the manifest file using sprockets require directives to require all Get Shit Done javascript files.
 
+[Back to top](#table-of-content)
+
 ## Page Generators
 
 Get Shit Done come with the following page generators to help you create the various pages. It's automatically handle all setup such as routes, controllers and views. By the way, all view layout are based on `_base.html.erb` layout, if you want to use different layout, you can specify it in your controller.
@@ -196,8 +202,12 @@ Generate tutorial html view at app/views/CONTROLLER/ACTION
 rails g gsdk:tutorial CONTROLLER ACTION
 ```
 
+[Back to top](#table-of-content)
+
 ## Changelog
 
 2015.10.26 - version 1.4.0.0
 
 * First Release!
+
+[Back to top](#table-of-content)
