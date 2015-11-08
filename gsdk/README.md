@@ -53,3 +53,143 @@ If you want to integrate existing rails app, please make sure you have remove al
 
   * app/assets/stylesheets/application.css
   * app/assets/javascripts/application.js
+
+## Theme Structure In Rails
+
+Get Shit Done (Rails version) has integrate lot of the rails best practices such as
+
+* integrate nicely with turbolinks enabled
+* dynamic load the javascript init scripts
+* proper asset pipeline integration
+
+Before we dive in to using Page Generators. Let get familiar how this gem integrate to rails app
+
+First thing first, in order to simplify the file management from your rails app, all the Get Shit Done files are actually located in the gem except the following files for customize purpose:
+
+Get Shit Done files in your rails app folder:
+
+* app/views/layouts/_base.html.erb
+* app/assets/stylesheets/gsdk.css
+* app/assets/javascripts/gsdk.js
+
+### _BASE.HTML.ERB
+
+It contain html head and empty body. All other layouts are based on this _base.html.erb layout so that same html head setting can be reuse among different layouts.
+
+There are three yield contents specified in base layout:
+
+```ruby
+<%= yield :style %>
+<%= yield :features %>
+<%= yield :class %>
+```
+
+#### <%= yield :style %>
+
+you can specify the custom css style content from the view file to fill in this area. For example, if you want to include some style on index view page only. From your index.html.erb, you can specify:
+
+```ruby
+<% content_for :style do %>
+<style>
+  .somestyle {
+  background-color: red;
+  }
+</style>
+<% end %>
+```
+
+#### <%= yield :features %>
+
+you can specify the javascript init features you want to invoke from the view file to fill in this area. For example, if you want to add feature1 and feature2 on index view page only. From your index.html.erb, you can specify:
+
+```ruby
+<% content_for :features, "feature1 feature2" %>
+```
+
+Then add the following init script in gsdk.js OR add it to separate js file and require it from gsdk.js
+
+```ruby
+$(document).on("page:change", function() {
+  if ($.inArray('feature1',App.features()) >= 0) {
+    Write your feature1 init script here ...
+  }
+  if ($.inArray('feature2',App.features()) >= 0) {
+    Write your feature2 init script here ...
+  }
+});
+```
+
+#### <%= yield :class %>
+
+you can specify the css class name from the view file to fill in this area. For example, if you want to give the class name on index view page only. From your index.html.erb, you can specify:
+
+```ruby
+<% content_for :class, "home" %>
+```
+
+### GSDK.CSS
+
+It is the manifest file using sprockets require directives to require all Get Shit Done stylesheet files.
+
+
+### GSDK.JS
+
+It is the manifest file using sprockets require directives to require all Get Shit Done javascript files.
+
+## Page Generators
+
+Get Shit Done come with the following page generators to help you create the various pages. It's automatically handle all setup such as routes, controllers and views. By the way, all view layout are based on `_base.html.erb` layout, if you want to use different layout, you can specify it in your controller.
+
+### COMPONENTS GENERATOR
+
+Generate component view at app/views/CONTROLLER/ACTION
+
+```
+rails g gsdk:components CONTROLLER ACTION
+```
+
+### INDEX GENERATOR
+
+Generate index view at app/views/CONTROLLER/ACTION
+
+```
+rails g gsdk:index CONTROLLER ACTION
+```
+
+### NAVBAR TRANSPARENT GENERATOR
+
+Generate navbar transparent view at app/views/CONTROLLER/ACTION
+
+```
+rails g gsdk:navbar_transparent CONTROLLER ACTION
+```
+
+### NOTIFICATION GENERATOR
+
+Generate notification view at app/views/CONTROLLER/ACTION
+
+```
+rails g gsdk:notification CONTROLLER ACTION
+```
+
+### TEMPLATE GENERATOR
+
+Generate template view at app/views/CONTROLLER/ACTION
+
+```
+rails g gsdk:template CONTROLLER ACTION
+```
+
+### TUTORIAL HTML GENERATOR
+
+Generate tutorial html view at app/views/CONTROLLER/ACTION
+
+```
+rails g gsdk:tutorial CONTROLLER ACTION
+```
+
+## Changelog
+
+2015.10.26 - version 1.4.0.0
+
+* First Release!
