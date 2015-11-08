@@ -4,6 +4,14 @@ Thanks for trying out Get Shit Done (Rails Version)! We promise your rails app w
 
 [![Get Shit Done](https://raw.githubusercontent.com/UiReady/uiready.github.io/master/images/gsdk_rails_cover.jpg)](https://uiready.io/items/get-shit-done-rails-version)
 
+## Table of Content
+
+* [Install Preparation](#install-preparation)
+* [Installation](#installation)
+* [Theme Structure In Rails](#theme-structure-in-rails)
+* [Page Generators](#page-generators)
+* [Changelog](#changelog)
+
 ## Install Preparation
 
 Recommend install on blank new rails app
