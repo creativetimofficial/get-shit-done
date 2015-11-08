@@ -18,38 +18,38 @@ If you want to integrate existing rails app, please make sure you have remove al
 
 1. Create a new rails application from terminal
 
-```
-rails new exampleapp
-cd exampleapp
-```
+  ```
+  rails new exampleapp
+  cd exampleapp
+  ```
 
 2. Install gsdk gem
 
-```
-gem 'gsdk', '>= 1.0.0.0'
-```
+  ```
+  gem 'gsdk', '>= 1.0.0.0'
+  ```
 
-Run the following command to install the gem:
+  Run the following command to install the gem:
 
-```
-bundle install
-```
+  ```
+  bundle install
+  ```
 
-Congratulation, Get Shit Done for Rails Version has been installed in your local machine.
+  Congratulation, Get Shit Done for Rails Version has been installed in your local machine.
 
 3. Run the install generator to integrate Get Shit Done in your rails
 
-```
-rails g gsdk:install
-```
+  ```
+  rails g gsdk:install
+  ```
 
-The install generator will created the following layout, css and js files in your app:
+  The install generator will created the following layout, css and js files in your app:
 
-* app/views/layouts/_base.html.erb
-* app/assets/stylesheets/gsdk.css
-* app/assets/javascripts/gsdk.js
+  * app/views/layouts/_base.html.erb
+  * app/assets/stylesheets/gsdk.css
+  * app/assets/javascripts/gsdk.js
 
-Also, it added require directive to require gsdk.css and gsdk.js from following manifest files:
+  Also, it added require directive to require gsdk.css and gsdk.js from following manifest files:
 
-* app/assets/stylesheets/application.css
-* app/assets/javascripts/application.js
+  * app/assets/stylesheets/application.css
+  * app/assets/javascripts/application.js
