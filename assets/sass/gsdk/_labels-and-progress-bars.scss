@@ -12,43 +12,52 @@
     margin-bottom: 3px;
 }
 .label-primary{
-    border-color: #3472F7;
-    color: #3472F7;
+    border-color: $primary-color;
+    color: $primary-color;
 }
 .label-info{
-    border-color: #2CA8FF;
-    color: #2CA8FF;
+    border-color: $info-color;
+    color: $info-color;
 }
 .label-success{
-    border-color: #05AE0E;
-    color: #05AE0E;
+    border-color: $success-color;
+    color: $success-color;
 }
 .label-warning{
-    border-color: #FF9500;
-    color: #FF9500;
+    border-color: $warning-color;
+    color: $warning-color;
 }
 .label-danger{
-    border-color: #FF3B30;
-    color: #FF3B30;
+    border-color: $danger-color;
+    color: $danger-color;
 }
 .label.label-fill{
     color: #FFFFFF;
 }
 .label-primary.label-fill, .progress-bar, .progress-bar-primary{
-   background-color: #3472F7;
+   background-color: $primary-color;
 }
 .label-info.label-fill, .progress-bar-info{
-    background-color: #2CA8FF;
+    background-color: $info-color;
 }
 .label-success.label-fill, .progress-bar-success{
-   background-color: #05AE0E;
+   background-color: $success-color;
 }
 .label-warning.label-fill, .progress-bar-warning{
-   background-color: #FF9500;
+   background-color: $warning-color;
 }
 .label-danger.label-fill, .progress-bar-danger{
-   background-color: #FF3B30;
+   background-color: $danger-color;
 }
 .label-default.label-fill{
    background-color: #999999;
+}
+.progress {
+    background-color: #E5E5E5;
+    border-radius: 3px;
+    box-shadow: none;
+    height: 4px;
+}
+.progress-thin{
+    height: 2px;
 }

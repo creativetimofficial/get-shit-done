@@ -11,11 +11,13 @@
    @include placeholder($medium-gray,1);
 }
 
+
 .form-control {
     background-color: $white-bg;
     border: 1px solid $medium-gray;
     border-radius: $border-radius-base;
     color: #444444;
+    
     @include input-size($padding-base-vertical, $padding-base-horizontal, $height-base);
     @include box-shadow(none);
 
@@ -35,29 +37,29 @@
     }
 
     .has-success &{
-        border-color: $success-color;
+        color: $success-color;
+        &:focus{
+            border-color: $success-color;
+        }
     }
-    .has-success &:focus{
-        border-color: $success-color;
-    }
+    
     .has-error &{
         color: $danger-color;
-        border-color: $danger-color;
-    }
-    .has-error &:focus{
-        border-color: $danger-color;
+        &:focus{
+            border-color: $danger-color;
+        }
     }
 
     & + .form-control-feedback{
         border-radius: $border-radius-large;
         font-size: $font-size-base;
-        margin-top: -7px;
+        padding: 0 12px 0 0;
         position: absolute;
-        right: 10px;
-        top: 50%;
+        right: 25px;
+        top: 13px;
         vertical-align: middle;
     }
-
+    
     .open > &{
         border-radius: $border-radius-base $border-radius-base 0 0;
         border-bottom-color: transparent;
@@ -85,6 +87,12 @@
     background-color: $white-color;
     border: 1px solid $light-gray;
     border-radius: $border-radius-base;
+    
+    -webkit-transition: all 300ms linear;
+    -moz-transition: all 300ms linear;
+    -o-transition: all 300ms linear;
+    -ms-transition: all 300ms linear;
+    transition: all 300ms linear;
 
     .has-success &,
     .has-error &{

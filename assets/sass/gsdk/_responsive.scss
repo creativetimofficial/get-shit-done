@@ -246,25 +246,6 @@
     .navbar-fixed-top {
         -webkit-backface-visibility: hidden;
     }
-
-    .social-line .btn{
-        margin: $margin-bottom;
-    }
-    .subscribe-line .form-control{
-        margin: $margin-bottom;
-    }
-    .social-line.pull-right{
-        float: none;
-    }
-    .footer nav.pull-left{
-        float: none !important;
-    }
-    .footer:not(.footer-big) nav > ul li{
-        float: none;
-    }
-    .social-area.pull-right{
-        float: none !important;
-    }
     .form-control + .form-control-feedback{
         margin-top: -8px;
     }
@@ -275,28 +256,5 @@
     .btn.dropdown-toggle{
         margin-bottom: 0;
     }
-    .media-post .author{
-        width: 20%;
-        float: none !important;
-        display: block;
-        margin: 0 auto 10px;
-    }
-    .media-post .media-body{
-        width: 100%;
-    }
 
-}
-
-//overwrite table responsive for 768px screens
-
-@media (max-width: 768px){
-    .table-responsive {
-        width: 100%;
-        margin-bottom: 15px;
-        overflow-x: scroll;
-        overflow-y: hidden;
-        border: 1px solid #dddddd;
-        -ms-overflow-style: -ms-autohiding-scrollbar;
-        -webkit-overflow-scrolling: touch;
-    }
 }

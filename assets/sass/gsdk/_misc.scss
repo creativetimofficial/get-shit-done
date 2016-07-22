@@ -33,19 +33,6 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 .navbar .alert{
     @include transition($general-transition-time, linear);
 }
-.tagsinput .tag,
-.tagsinput-remove-link,
-.filter,
-.btn-hover,
-[data-toggle="collapse"] i{
-    @include transition($fast-transition-time, linear);
-}
- 
-.btn-morphing .fa,
-.btn-morphing .circle,
-.gsdk-collapse{
-    @include transition($slow-transition-time, linear);
-}
 
 .fa{
     width: 18px;

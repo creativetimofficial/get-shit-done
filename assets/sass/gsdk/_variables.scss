@@ -161,13 +161,6 @@ $navbar-margin-brand-icons:      12px auto;
 
 $navbar-margin-btn:              15px  3px;
 
-$height-icon:					 64px !default;
-$width-icon:					 64px !default;
-$padding-icon:					 12px !default;
-$border-radius-icon:		     15px !default;
-
-$size-icon: 					 64px;
-$size-icon-sm: 					 32px;
 
 
 $height-icon-sm:				 32px;
@@ -182,7 +175,6 @@ $height-icon-message-sm: 		 20px;
 $width-icon-message-sm:			 20px;
 
 
-
 $white-navbar:              rgba(#FFFFFF, .96);
 $blue-navbar:               rgba(#34ACDC, .98);
 $azure-navbar:              rgba(#5BCAFF, .98);
@@ -190,52 +182,6 @@ $green-navbar:              rgba(#4CD964, .98);
 $orange-navbar:             rgba(#FF9500, .98);
 $red-navbar:                rgba(#FF4C40, .98);
 
-$icon-default-color-top:	#d9d9d9 !default;
-$icon-default-color-bottom: #909297 !default;
-
-$icon-blue-color-top: 		#4087ea;
-$icon-blue-color-bottom: 	#533ce1;
-
-$icon-azure-color-top:   	#45c0fd;
-$icon-azure-color-bottom: 	#4091ff;
-
-$icon-green-color-top: 	    #a1eb3a;
-$icon-green-color-bottom: 	#6dc030;
-
-$icon-orange-color-top: 	#ffb33b;
-$icon-orange-color-bottom: 	#ff5221;
-
-$icon-red-color-top: 	    #ff3b30;
-$icon-red-color-bottom: 	#bb0502;
-
-$icon-purple-color-top: 	#df55e1;
-$icon-purple-color-bottom: 	#943bea;
-
-$icon-pink-color-top: 		#ff2a63;
-$icon-pink-color-bottom: 	#ff2e2e;
-
-$icon-black-color-top:	 	#787878;
-$icon-black-color-bottom: 	#343434;
-
-$social-facebook: 			#3b5998;
-$social-twitter: 			#55acee;
-$social-pinterest: 			#cc2127;
-$social-google: 			#dd4b39;
-$social-linkedin: 			#0976b4;
-$social-dribbble: 			#ea4c89;
-$social-github: 			#333333;
-$social-youtube: 			#e52d27;
-$social-stumbleupon: 		#eb4924;
-$social-reddit: 			#ff4500;
-$social-tumblr: 			#35465c;
-$social-behance: 			#1769ff;
-
-
-$filter-blue:         darken($primary-color, 10%);
-$filter-azure:        darken($info-color, 10%);
-$filter-green:        darken($success-color, 10%);
-$filter-orange:       darken($warning-color, 10%);
-$filter-red:          darken($danger-color, 10%);  
 
 
 $topbar-x:             topbar-x !default;

@@ -28,18 +28,8 @@
         border-radius: 0 $border-radius-base $border-radius-base 0;
     }
 }
-.nav-stacked{
-    > li:first-child > a{
-        border-radius: $border-radius-base $border-radius-base 0 0;
-        margin-left: -1px;
-    }
-    > li:last-child > a{
-        border-radius: 0 0 $border-radius-base $border-radius-base;
-    }
-    >li+li{
-        margin-top: -1px;
-    }
-}
+
+// style for pagination
 .pagination.pagination-no-border > li > a,
 .pagination.pagination-no-border > li > span{
     border: 0;
@@ -129,89 +119,4 @@
 }
 .nav-pills-red > li > a {
     @include pill-style($danger-color);
-}
-
-.nav-text, .nav-icons{
-    margin: $margin-bottom;
-
-    > li > a{
-        display: block;
-        padding: 0px $padding-base-horizontal;
-        color: $dark-gray;
-        text-align: center;
-        @include opacity(0.8);
-
-        &:hover,
-        &:focus{
-            background-color: $transparent-bg;
-            @include opacity(1);
-        }
-    }
-    > li:first-child a{
-        padding-left: 0;
-    }
-    > li.active a{
-       color: $info-color;
-    }
-}
-.nav-icons > li{
-    display: inline-block;
-     > a{
-        padding: 0 10px;
-        margin-bottom: 10px;
-    }
-    > a i{
-        font-size: $font-size-h4;
-        margin-bottom: 10px;
-        width: $font-size-h4;
-    }
-}
-.nav-icons.nav-stacked > li{
-    display: block;
-    > a {
-        margin-bottom: 20px;
-    }
-}
-.nav-blue > li.active a{
-    color: $primary-color;
-}
-.nav-azure > li.active a{
-    color: $info-color;
-}
-.nav-green > li.active a{
-    color: $success-color;
-}
-.nav-orange > li.active a{
-    color: $warning-color;
-}
-.nav-red > li.active a{
-    color: $danger-color;
-}
-
-.nav-text{
-    margin: $margin-bottom;
-
-    > li > a{
-        font-size: $font-size-h6;
-        text-transform: uppercase;
-        padding: 3px 0;
-        text-align: left;
-        font-weight: $font-weight-semi;
-
-    }
-    > li:first-child > a{
-        padding-top: 0;
-    }
-    h4{
-        margin-top: 0;
-    }
-}
-
-.nav-text:not(.nav-stacked){
-    > li{
-        display: inline-block;
-    }
-    > li > a{
-        margin-right: 15px;
-    }
 }

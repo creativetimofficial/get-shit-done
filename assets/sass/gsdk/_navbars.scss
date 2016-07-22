@@ -9,6 +9,8 @@
 .navbar{
     border: $none;
     font-size: $font-size-navbar;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
 
     .navbar-brand {
         font-weight: $font-weight-bold;
@@ -61,6 +63,7 @@
         &:focus,
         &:hover{
             background-color: transparent;
+            color: $white-color;
             @include opacity(1);
         }
     }
@@ -211,30 +214,6 @@
     .navbar-toggle:hover,
     .navbar-toggle:focus {
         background-color: transparent;
-    }
-}
-
-/*      Navbar with icons            */
-
-.navbar-icons{
-    &.navbar .navbar-brand{
-        margin-top: 12px;
-        margin-bottom: 12px;
-    }
-    .navbar-nav{
-        > li > a{
-            text-align: center;
-            padding: $navbar-padding-a-icons;
-            margin: $navbar-margin-a-icons;
-        }
-
-        [class^="pe"] {
-            font-size: 30px;
-            position: relative;
-        }
-        p {
-            margin: 3px 0 0;
-        }
     }
 }
 
