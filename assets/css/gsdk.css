@@ -1550,18 +1550,19 @@ input.ct-red + span + label + span.switch-right {
 .panel-group .panel-default > .panel-heading + .panel-collapse.gsdk-collapse > .panel-body {
   box-shadow: inset 0 7px 10px -7px rgba(0, 0, 0, 0.14); }
 
-.carousel-control {
-  width: 8%; }
-  .carousel-control.left, .carousel-control.right {
-    background-image: none; }
-  .carousel-control .fa {
-    font-size: 35px; }
-  .carousel-control .fa,
-  .carousel-control .icon-prev, .carousel-control .icon-next {
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    z-index: 5; }
+.carousel-control.left, .carousel-control.right {
+  background-image: none; }
+.carousel-control .fa {
+  font-size: 35px; }
+.carousel-control .fa,
+.carousel-control .icon-prev,
+.carousel-control .icon-next {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  margin-top: -17px;
+  margin-left: -9px; }
 
 .carousel-inner > .item {
   transition: left 1200ms cubic-bezier(0.455, 0.03, 0.4, 0.955) 0s;
@@ -2003,9 +2004,11 @@ input.ct-red + span + label + span.switch-right {
   .navbar-fixed-top {
     -webkit-backface-visibility: hidden; }
 
-  .form-control + .form-control-feedback {
-    margin-top: -8px; }
-
+  /*
+      .form-control + .form-control-feedback{
+          margin-top: -8px;
+      }
+  */
   .navbar-toggle:hover,
   .navbar-toggle:focus {
     background-color: transparent !important; }

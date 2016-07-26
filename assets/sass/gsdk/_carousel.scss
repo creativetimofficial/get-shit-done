@@ -1,5 +1,5 @@
 .carousel-control{
-    width: 8%;
+//     width: 8%;
     &.left, 
     &.right{
         background-image: none;
@@ -8,11 +8,14 @@
        font-size: 35px; 
     }
     .fa, 
-    .icon-prev, .icon-next{
+    .icon-prev, 
+    .icon-next{
         display: inline-block;
         position: absolute;
         top: 50%;
         z-index: 5;
+        margin-top: -17px;
+        margin-left: -9px;
     }
 }
 .carousel-inner > .item {

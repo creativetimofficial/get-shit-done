@@ -4,6 +4,9 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<title>Get Shit Done Kit by Creative Tim</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
 	
     <link href="bootstrap3/css/bootstrap.css" rel="stylesheet" />
 	<link href="assets/css/gsdk.css" rel="stylesheet" />  
@@ -59,17 +62,17 @@
                     </div>
                 </div>
                 <div class="row tim-row" id="display-buttons" data-class="btn-info">
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6">
                         <button href="#fakelink" class="btn btn-block btn-lg btn-info">Default Button</button>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6">
                         <button href="#fakelink" class="btn btn-block btn-lg btn-info btn-fill">Filled Button</button>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6">
                         <button href="#fakelink" class="btn btn-block btn-lg btn-info btn-round">Rounded Button</button>
                     </div>
                     
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6">
                         <button href="#fakelink" class="btn btn-block btn-lg btn-info btn-simple">Simple Button</button>
                     </div>
                 </div> <!-- end row -->               
@@ -311,7 +314,7 @@
     <div class="container tim-container">
          <div id="sliders-navigation">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 ">
                     <div class="tim-title">
                         <h3>Progress Bars</h3>
                     </div>
@@ -507,17 +510,17 @@
             </div>
             <br>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-6">
                     <h4>Rounded Image</h4>
                     <img src="assets/img/mockup.png" alt="Rounded Image" class="img-rounded">
                     
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-6">
                     <h4>Circle Image</h4>
                     <img src="assets/img/mockup.png" alt="Circle Image" class="img-circle">
                    
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-6">
                     <h4>Thumbnail Image</h4>
                     <img src="assets/img/mockup.png" alt="Thumbnail Image" class="img-thumbnail">
                     
@@ -570,16 +573,18 @@
          <!--    end modal -->
             
             <div class="col-md-6">
-                <div class="tim-title">
-                    <h3>Tooltips</h3>
+                <div id="tooltips">
+                    <div class="tim-title">
+                        <h3>Tooltips</h3>
+                    </div>
+                    <button type="button" class="btn btn-default btn-tooltip" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+        
+        <button type="button" class="btn btn-default btn-tooltip" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+        
+        <button type="button" class="btn btn-default btn-tooltip" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+        
+        <button type="button" class="btn btn-default btn-tooltip" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
                 </div>
-                <button type="button" class="btn btn-default btn-tooltip" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
-    
-    <button type="button" class="btn btn-default btn-tooltip" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
-    
-    <button type="button" class="btn btn-default btn-tooltip" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
-    
-    <button type="button" class="btn btn-default btn-tooltip" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
             </div>
             <div class="clearfix"></div><br><br>
         <!--     end tooltips -->
@@ -713,21 +718,24 @@
             <div class="space"></div>
             <div class="row">
                 <div class="col-md-7">
-                        <img src="assets/img/dulau.jpg" alt="Rounded Image" class="img-rounded">
+                    <div class="text-center">
+                        <img src="assets/img/dulau.jpg" alt="Rounded Image" class="img-rounded img-responsive">
+                    </div>
                 </div>
                 <div class="col-md-5">
                                 <h1 class="text-center">About Creative Tim
                                 
-                                <small class="subtitle">Get to know our favourite designer</small></h1>
+                                <small class="subtitle">Get to know us</small></h1>
                                 <hr>
-                                    <p>
-                                    Creative Tim symbolizes the creative spirit inside of each and everyone of us. A designer by trade, he enjoys making the World Wide Web a more beautiful place and helping others do the same.
-                                    </p>
-                                    <p>
-                                        Creative Tim stands for everything a designer looks in his work: clean, functions interfaces for great products. The number of friends with similar attitude can only increase over time, since the vision for a better web is a wish of many designers. Be sure to enroll and browse around for anything that may brng extra value to your project and ask Tim wherever you see something missing.
-                                    </p>
-                                    <p>
-                                    Tim thinks communication is key and he enjoys all the feedback you give him. If you have any ideas about how he could make our community better or even if you have any questions or complaints drop him a line.                                    </p>
+                                <p>
+                                Creative Tim offers Bootstrap based design elements that speed up your development work. From plugins to complex kits, we have everything you need. 
+                                </p>
+                                <p>
+                                    We love the web and care deeply for how users interact with a digital product. The idea behind Creative Tim was creating a standard of things we actually need and would personally use inside our web projects. We power businesses and individuals to create better looking web projects around the world.
+                                </p>
+                                <p>
+                                We take great interest in how our customers use our resources and offer strong support and unlimited updates. We are constantly thinking about how to make our products intuitive, beautiful and extremely easy to understand, so feel free to tell us your thoughts!                                   
+                                </p>
 
                 </div>
             </div>
@@ -742,7 +750,7 @@
 <!-- end main -->
 
 <div class="parallax-pro">
-    <img src="http://get-shit-done-pro.herokuapp.com/assets/img/bg6.jpg">
+    <div class="img-src" style="background-image: url('http://get-shit-done-pro.herokuapp.com/assets/img/bg6.jpg');"></div>
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
@@ -752,7 +760,7 @@
                     </small>
                 </h1>
             </div>
-            <div class="col-md-6 col-md-offset-3 text-center">
+            <div class="col-md-6 col-md-offset-3 col-md-12 text-center">
                 <h1 class="hello text-center">
                    <a href="http://get-shit-done-pro.herokuapp.com">Get Shit Done Kit <span class="label label-warning"> Pro</span></a>
                    <small>
