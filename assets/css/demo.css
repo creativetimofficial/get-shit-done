@@ -400,3 +400,7 @@
 #buttons .btn, #tooltips .btn{
     margin-bottom: 15px;
 }
+.img-dog{
+    display: inline-block;
+    margin-bottom: 25px;
+}
