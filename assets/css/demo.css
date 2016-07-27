@@ -118,7 +118,7 @@
     background-attachment: fixed;
     position: relative;
 }
-.footer .heart{
+.heart{
     color: #FF3B30;
 }
 .footer .overlayer{
@@ -165,8 +165,7 @@
   width:100%;
   display: block;
   position: relative;
-  overflow: hidden;
-  background-color: #fff;
+  background-color: #000;
 }
 .parallax-pro > .img-src{
     background-position: center center;
