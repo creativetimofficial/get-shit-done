@@ -140,11 +140,13 @@
     background-color: transparent;
 }
 
+/*
 .navbar-transparent{
     .dropdown-menu .divider{
         background-color: rgba($white-color,.2);
     }
 }
+*/
 
 .navbar-inverse{
     .navbar-toggle:hover,
@@ -238,7 +240,7 @@
 .navbar-ct-blue{
     @include navbar-color($blue-navbar);
 }
-.navbar-ct-azure{
+.navbar-ct-azzure{
     @include navbar-color($azure-navbar);
 }
 .navbar-ct-green{

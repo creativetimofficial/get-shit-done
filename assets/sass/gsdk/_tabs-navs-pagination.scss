@@ -46,9 +46,9 @@
     padding: 7px 13px;
 }
 
-.nav-pills-blue > li.active > a,
-.nav-pills-blue > li.active > a:hover,
-.nav-pills-blue > li.active > a:focus,
+.nav-pills.ct-blue > li.active > a,
+.nav-pills.ct-blue > li.active > a:hover,
+.nav-pills.ct-blue > li.active > a:focus,
 .pagination-blue > li.active > a,
 .pagination-blue > li.active > span,
 .pagination-blue > li.active > a:hover,
@@ -58,15 +58,15 @@
    background-color: $primary-color;
 }
 
-.nav-pills-azure > li.active > a,
-.nav-pills-azure > li.active > a:hover,
-.nav-pills-azure > li.active > a:focus,
-.pagination-azure > li.active > a,
-.pagination-azure > li.active > span,
-.pagination-azure > li.active > a:hover,
-.pagination-azure > li.active > span:hover,
-.pagination-azure > li.active > a:focus,
-.pagination-azure > li.active > span:focus{
+.nav-pills.ct-azzure > li.active > a,
+.nav-pills.ct-azzure > li.active > a:hover,
+.nav-pills.ct-azzure > li.active > a:focus,
+.pagination-azzure > li.active > a,
+.pagination-azzure > li.active > span,
+.pagination-azzure > li.active > a:hover,
+.pagination-azzure > li.active > span:hover,
+.pagination-azzure > li.active > a:focus,
+.pagination-azzure > li.active > span:focus{
    background-color: $info-color;
 }
 

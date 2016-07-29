@@ -2,6 +2,10 @@
 body{
     font-family: "Helvetica Neue","Open Sans",Arial,sans-serif;
 }
+.main{
+    background-color: #FFFFFF;
+    position: relative;
+}
 a{
   color: $info-color;
     
@@ -45,45 +49,45 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 /*       CT colors          */
 .ct-blue, 
-.checkbox-blue.checkbox.checked .second-icon,
-.checkbox-blue.checkbox.checked, 
-.radio-blue.radio.checked .second-icon,
-.radio-blue.radio.checked{
+.ct-blue.checkbox.checked .second-icon,
+.ct-blue.checkbox.checked, 
+.ct-blue.radio.checked .second-icon,
+.ct-blue.radio.checked{
     color: $primary-color;
 }
-.ct-azure,
-.checkbox-azure.checkbox.checked .second-icon,
-.radio-azure.radio.checked .second-icon,
-.checkbox-azure.checkbox.checked, 
-.radio-azure.radio.checked{
+.ct-azzure,
+.ct-azzure.checkbox.checked .second-icon,
+.ct-azzure.radio.checked .second-icon,
+.ct-azzure.checkbox.checked, 
+.ct-azzure.radio.checked{
     color: $info-color;
 }
-.ct-green, 
-.checkbox-green.checkbox.checked .second-icon, 
-.radio-green.radio.checked .second-icon, 
-.checkbox-green.checkbox.checked, 
-.radio-green.radio.checked{
+.ct-green,
+.ct-green.checkbox.checked .second-icon, 
+.ct-green.radio.checked .second-icon, 
+.ct-green.checkbox.checked, 
+.ct-green.radio.checked{
     color: $success-color;
 }
 .ct-orange, 
-.checkbox-orange.checkbox.checked .second-icon, 
-.radio-orange.radio.checked .second-icon, 
-.checkbox-orange.checkbox.checked, 
-.radio-orange.radio.checked{
+.ct-orange.checkbox.checked .second-icon, 
+.ct-orange.radio.checked .second-icon, 
+.ct-orange.checkbox.checked, 
+.ct-orange.radio.checked{
     color: $warning-color;
 }
 .ct-red, 
-.checkbox-red.checkbox.checked .second-icon, 
-.radio-red.radio.checked .second-icon, 
-.checkbox-red.checkbox.checked, 
-.radio-red.radio.checked{
+.ct-red.checkbox.checked .second-icon, 
+.ct-red.radio.checked .second-icon, 
+.ct-red.checkbox.checked, 
+.ct-red.radio.checked{
     color: $danger-color;
 }
 input.ct-blue + span.switch-left, 
 input.ct-blue + span + label + span.switch-right{
     background-color:  $primary-color;
 }
-input.ct-azure + span.switch-left, 
+input.ct-azzure + span.switch-left, 
 input.ct-azure + span + label + span.switch-right{
     background-color:  $info-color;
 }
