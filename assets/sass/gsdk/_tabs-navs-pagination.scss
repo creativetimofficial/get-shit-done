@@ -18,7 +18,7 @@
     > li.active > a:hover,
     > li.active > a:focus {
         background-color: $info-color;
-        color: #FFFFFF;
+        color: #FFFFFF !important;
     }
     > li:first-child > a{
         border-radius: $border-radius-base 0 0 $border-radius-base;
@@ -49,74 +49,74 @@
 .nav-pills.ct-blue > li.active > a,
 .nav-pills.ct-blue > li.active > a:hover,
 .nav-pills.ct-blue > li.active > a:focus,
-.pagination-blue > li.active > a,
-.pagination-blue > li.active > span,
-.pagination-blue > li.active > a:hover,
-.pagination-blue > li.active > span:hover,
-.pagination-blue > li.active > a:focus,
-.pagination-blue > li.active > span:focus{
+.pagination.ct-blue > li.active > a,
+.pagination.ct-blue > li.active > span,
+.pagination.ct-blue > li.active > a:hover,
+.pagination.ct-blue > li.active > span:hover,
+.pagination.ct-blue > li.active > a:focus,
+.pagination.ct-blue > li.active > span:focus{
    background-color: $primary-color;
 }
 
 .nav-pills.ct-azzure > li.active > a,
 .nav-pills.ct-azzure > li.active > a:hover,
 .nav-pills.ct-azzure > li.active > a:focus,
-.pagination-azzure > li.active > a,
-.pagination-azzure > li.active > span,
-.pagination-azzure > li.active > a:hover,
-.pagination-azzure > li.active > span:hover,
-.pagination-azzure > li.active > a:focus,
-.pagination-azzure > li.active > span:focus{
+.pagination.ct-azzure > li.active > a,
+.pagination.ct-azzure > li.active > span,
+.pagination.ct-azzure > li.active > a:hover,
+.pagination.ct-azzure > li.active > span:hover,
+.pagination.ct-azzure > li.active > a:focus,
+.pagination.ct-azzure > li.active > span:focus{
    background-color: $info-color;
 }
 
-.nav-pills-green >  li.active > a,
-.nav-pills-green >  li.active > a:hover,
-.nav-pills-green >  li.active > a:focus,
-.pagination-green > li.active > a,
-.pagination-green > li.active > span,
-.pagination-green > li.active > a:hover,
-.pagination-green > li.active > span:hover,
-.pagination-green > li.active > a:focus,
-.pagination-green > li.active > span:focus{
+.nav-pills.ct-green >  li.active > a,
+.nav-pills.ct-green >  li.active > a:hover,
+.nav-pills.ct-green >  li.active > a:focus,
+.pagination.ct-green > li.active > a,
+.pagination.ct-green > li.active > span,
+.pagination.ct-green > li.active > a:hover,
+.pagination.ct-green > li.active > span:hover,
+.pagination.ct-green > li.active > a:focus,
+.pagination.ct-green > li.active > span:focus{
    background-color: $success-color;
 }
 
-.nav-pills-orange > li.active > a,
-.nav-pills-orange > li.active > a:hover,
-.nav-pills-orange > li.active > a:focus,
-.pagination-orange > li.active > a,
-.pagination-orange > li.active > span,
-.pagination-orange > li.active > a:hover,
-.pagination-orange > li.active > span:hover,
-.pagination-orange > li.active > a:focus,
-.pagination-orange > li.active > span:focus{
+.nav-pills.ct-orange > li.active > a,
+.nav-pills.ct-orange > li.active > a:hover,
+.nav-pills.ct-orange > li.active > a:focus,
+.pagination.ct-orange > li.active > a,
+.pagination.ct-orange > li.active > span,
+.pagination.ct-orange > li.active > a:hover,
+.pagination.ct-orange > li.active > span:hover,
+.pagination.ct-orange > li.active > a:focus,
+.pagination.ct-orange > li.active > span:focus{
    background-color: $warning-color;
 }
 
-.nav-pills-red > li.active > a,
-.nav-pills-red > li.active > a:hover,
-.nav-pills-red > li.active > a:focus,
-.pagination-red > li.active > a,
-.pagination-red > li.active > span,
-.pagination-red > li.active > a:hover,
-.pagination-red > li.active > span:hover,
-.pagination-red > li.active > a:focus,
-.pagination-red > li.active > span:focus{
+.nav-pills.ct-red > li.active > a,
+.nav-pills.ct-red > li.active > a:hover,
+.nav-pills.ct-red > li.active > a:focus,
+.pagination.ct-red > li.active > a,
+.pagination.ct-red > li.active > span,
+.pagination.ct-red > li.active > a:hover,
+.pagination.ct-red > li.active > span:hover,
+.pagination.ct-red > li.active > a:focus,
+.pagination.ct-red > li.active > span:focus{
    background-color: $danger-color;
 }
-.nav-pills-blue > li > a {
+.nav-pills.ct-blue > li > a {
     @include pill-style($primary-color);
 }
-.nav-pills-azure > li > a {
+.nav-pills.ct-azzure > li > a {
     @include pill-style($info-color);
 }
-.nav-pills-green > li > a {
+.nav-pills.ct-green > li > a {
     @include pill-style($success-color);
 }
-.nav-pills-orange > li > a {
+.nav-pills.ct-orange > li > a {
     @include pill-style($warning-color);
 }
-.nav-pills-red > li > a {
+.nav-pills.ct-red > li > a {
     @include pill-style($danger-color);
 }

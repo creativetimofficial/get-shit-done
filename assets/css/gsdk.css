@@ -1436,7 +1436,7 @@ input.ct-red + span + label + span.switch-right {
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   background-color: #2CA8FF;
-  color: #FFFFFF; }
+  color: #FFFFFF !important; }
 .nav-pills > li:first-child > a {
   border-radius: 4px 0 0 4px;
   margin: 0; }
@@ -1461,75 +1461,75 @@ input.ct-red + span + label + span.switch-right {
 .nav-pills.ct-blue > li.active > a,
 .nav-pills.ct-blue > li.active > a:hover,
 .nav-pills.ct-blue > li.active > a:focus,
-.pagination-blue > li.active > a,
-.pagination-blue > li.active > span,
-.pagination-blue > li.active > a:hover,
-.pagination-blue > li.active > span:hover,
-.pagination-blue > li.active > a:focus,
-.pagination-blue > li.active > span:focus {
+.pagination.ct-blue > li.active > a,
+.pagination.ct-blue > li.active > span,
+.pagination.ct-blue > li.active > a:hover,
+.pagination.ct-blue > li.active > span:hover,
+.pagination.ct-blue > li.active > a:focus,
+.pagination.ct-blue > li.active > span:focus {
   background-color: #3472F7; }
 
 .nav-pills.ct-azzure > li.active > a,
 .nav-pills.ct-azzure > li.active > a:hover,
 .nav-pills.ct-azzure > li.active > a:focus,
-.pagination-azzure > li.active > a,
-.pagination-azzure > li.active > span,
-.pagination-azzure > li.active > a:hover,
-.pagination-azzure > li.active > span:hover,
-.pagination-azzure > li.active > a:focus,
-.pagination-azzure > li.active > span:focus {
+.pagination.ct-azzure > li.active > a,
+.pagination.ct-azzure > li.active > span,
+.pagination.ct-azzure > li.active > a:hover,
+.pagination.ct-azzure > li.active > span:hover,
+.pagination.ct-azzure > li.active > a:focus,
+.pagination.ct-azzure > li.active > span:focus {
   background-color: #2CA8FF; }
 
-.nav-pills-green > li.active > a,
-.nav-pills-green > li.active > a:hover,
-.nav-pills-green > li.active > a:focus,
-.pagination-green > li.active > a,
-.pagination-green > li.active > span,
-.pagination-green > li.active > a:hover,
-.pagination-green > li.active > span:hover,
-.pagination-green > li.active > a:focus,
-.pagination-green > li.active > span:focus {
+.nav-pills.ct-green > li.active > a,
+.nav-pills.ct-green > li.active > a:hover,
+.nav-pills.ct-green > li.active > a:focus,
+.pagination.ct-green > li.active > a,
+.pagination.ct-green > li.active > span,
+.pagination.ct-green > li.active > a:hover,
+.pagination.ct-green > li.active > span:hover,
+.pagination.ct-green > li.active > a:focus,
+.pagination.ct-green > li.active > span:focus {
   background-color: #05AE0E; }
 
-.nav-pills-orange > li.active > a,
-.nav-pills-orange > li.active > a:hover,
-.nav-pills-orange > li.active > a:focus,
-.pagination-orange > li.active > a,
-.pagination-orange > li.active > span,
-.pagination-orange > li.active > a:hover,
-.pagination-orange > li.active > span:hover,
-.pagination-orange > li.active > a:focus,
-.pagination-orange > li.active > span:focus {
+.nav-pills.ct-orange > li.active > a,
+.nav-pills.ct-orange > li.active > a:hover,
+.nav-pills.ct-orange > li.active > a:focus,
+.pagination.ct-orange > li.active > a,
+.pagination.ct-orange > li.active > span,
+.pagination.ct-orange > li.active > a:hover,
+.pagination.ct-orange > li.active > span:hover,
+.pagination.ct-orange > li.active > a:focus,
+.pagination.ct-orange > li.active > span:focus {
   background-color: #FF9500; }
 
-.nav-pills-red > li.active > a,
-.nav-pills-red > li.active > a:hover,
-.nav-pills-red > li.active > a:focus,
-.pagination-red > li.active > a,
-.pagination-red > li.active > span,
-.pagination-red > li.active > a:hover,
-.pagination-red > li.active > span:hover,
-.pagination-red > li.active > a:focus,
-.pagination-red > li.active > span:focus {
+.nav-pills.ct-red > li.active > a,
+.nav-pills.ct-red > li.active > a:hover,
+.nav-pills.ct-red > li.active > a:focus,
+.pagination.ct-red > li.active > a,
+.pagination.ct-red > li.active > span,
+.pagination.ct-red > li.active > a:hover,
+.pagination.ct-red > li.active > span:hover,
+.pagination.ct-red > li.active > a:focus,
+.pagination.ct-red > li.active > span:focus {
   background-color: #FF3B30; }
 
-.nav-pills-blue > li > a {
+.nav-pills.ct-blue > li > a {
   border: 1px solid #3472F7;
   color: #3472F7; }
 
-.nav-pills-azure > li > a {
+.nav-pills.ct-azzure > li > a {
   border: 1px solid #2CA8FF;
   color: #2CA8FF; }
 
-.nav-pills-green > li > a {
+.nav-pills.ct-green > li > a {
   border: 1px solid #05AE0E;
   color: #05AE0E; }
 
-.nav-pills-orange > li > a {
+.nav-pills.ct-orange > li > a {
   border: 1px solid #FF9500;
   color: #FF9500; }
 
-.nav-pills-red > li > a {
+.nav-pills.ct-red > li > a {
   border: 1px solid #FF3B30;
   color: #FF3B30; }
 

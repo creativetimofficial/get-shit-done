@@ -336,26 +336,34 @@
 }
 
 .logo-container{
+/*
     left: 50px;
     position: absolute;
     top: 20px;
      z-index: 3;
+*/
+    margin-top: 10px;
 }
 .logo-container .logo{
     overflow: hidden;
     border-radius: 50%;
     border: 1px solid #333333;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     float: left;
+}
+.logo-container .logo img{
+    width: 100%;
 }
 .logo-container .brand{
     font-size: 18px;
     color: #FFFFFF;
-    line-height: 20px;
     float: left;
+    height: 50px;
+    line-height: 20px;
     margin-left: 10px;
-    margin-top: 10px;
-    width: 60px
+    margin-top: 5px;
+    width: 60px;
 }
 .blurred-container .motto{
     color: #FFFFFF;
