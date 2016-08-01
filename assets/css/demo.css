@@ -39,7 +39,6 @@
 #navbar-full .navbar{
     border-radius: 0 !important;
     margin-bottom: 0;
-    z-index: 2;
 }
 .navigation-example{
     margin-top: 0px;
@@ -51,12 +50,6 @@
 .navigation-example .img-src{
     background-attachment: scroll; 
 }
-/*
-.main{
-    position: relative;
-    z-index: 4;
-}
-*/
 .main{
     background-color: #FFFFFF;
 }
@@ -336,12 +329,6 @@
 }
 
 .logo-container{
-/*
-    left: 50px;
-    position: absolute;
-    top: 20px;
-     z-index: 3;
-*/
     margin-top: 10px;
 }
 .logo-container .logo{
