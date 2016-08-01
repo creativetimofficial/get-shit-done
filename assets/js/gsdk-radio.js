@@ -40,23 +40,23 @@
         , $parentWrap = $el.closest('form').length ? $el.closest('form') : $el.closest('body')
         , $elemGroup = $parentWrap.find(':radio[name="' + $el.attr('name') + '"]')
         , e = $.Event('toggle')
-        
-        $elemGroup.not($el).each(function () {
-          var $el = $(this)
-            , $parent = $(this).closest('.radio');
-            
-            if ($el.prop(d) == false) {
-              $parent.removeClass(ch) && $el.removeAttr(ch).trigger('change');
-            } 
-        });
       
         if ($el.prop(d) == false) {
-          if (checked == false) $parent.addClass(ch) && $el.prop(ch, true);
-          $el.trigger(e);
+            $elemGroup.not($el).each(function () {
+              var $el = $(this)
+                , $parent = $(this).closest('.radio');
+                
+                if ($el.prop(d) == false) {
+                  $parent.removeClass(ch) && $el.removeAttr(ch).trigger('change');
+                } 
+            });
+            
+            if (checked == false) $parent.addClass(ch) && $el.prop(ch, true);
+            $el.trigger(e);
           
-          if (checked !== $el.prop(ch)) {
-            $el.trigger('change'); 
-          }
+            if (checked !== $el.prop(ch)) {
+                $el.trigger('change'); 
+            }
         }               
     } 
      

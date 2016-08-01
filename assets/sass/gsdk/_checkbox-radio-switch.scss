@@ -18,7 +18,7 @@
 }
 .checkbox .icons,
 .radio .icons {
-  color: #D9D9D9;
+  color: $medium-gray;
   display: block;
   height: 20px;
   left: 0;
@@ -32,6 +32,8 @@
   -webkit-transition: color 0.2s linear;
   transition: color 0.2s linear;
 }
+
+
 .checkbox .icons .first-icon,
 .radio .icons .first-icon,
 .checkbox .icons .second-icon,
@@ -42,13 +44,11 @@
   top: 0;
   background-color: transparent;
   margin: 0;
-  opacity: 1;
-  filter: alpha(opacity=100);
+  @include opacity(1);
 }
 .checkbox .icons .second-icon,
 .radio .icons .second-icon {
-  opacity: 0;
-  filter: alpha(opacity=0);
+  @include opacity(0);
 }
 .checkbox:hover,
 .radio:hover {
@@ -57,17 +57,15 @@
 }
 .checkbox:hover .first-icon,
 .radio:hover .first-icon {
-  opacity: 0;
-  filter: alpha(opacity=0);
+ @include opacity(0);
 }
 .checkbox:hover .second-icon,
 .radio:hover .second-icon {
-  opacity: 1;
-  filter: alpha(opacity=100);
+ @include opacity (1);
 }
 .checkbox.checked,
 .radio.checked {
-  color: #2C93FF;
+  color: $info-color;
 }
 .checkbox.checked .first-icon,
 .radio.checked .first-icon {
@@ -78,18 +76,18 @@
 .radio.checked .second-icon {
   opacity: 1;
   filter: alpha(opacity=100);
-  color: #2C93FF;
+  color: $info-color;
   -webkit-transition: color 0.2s linear;
   transition: color 0.2s linear;
 }
 .checkbox.disabled,
 .radio.disabled {
   cursor: default;
-  color: #D9D9D9 !important;
+  color: $medium-gray !important;
 }
 .checkbox.disabled .icons,
 .radio.disabled .icons {
-  color: #D9D9D9 !important;
+  color: $medium-gray !important;
 }
 .checkbox.disabled .first-icon,
 .radio.disabled .first-icon {
@@ -103,7 +101,7 @@
 }
 .checkbox.disabled.checked .icons,
 .radio.disabled.checked .icons {
-  color: #D9D9D9;
+  color: $medium-gray;
 }
 .checkbox.disabled.checked .first-icon,
 .radio.disabled.checked .first-icon {
@@ -116,6 +114,8 @@
   filter: alpha(opacity=100);
   color: #D9D9D9;
 }
+
+
 
 /* ============================================================
  * bootstrapSwitch v1.3 by Larentis Mattia @spiritualGuru
@@ -144,10 +144,6 @@
     -webkit-mask: url('../img/mask.png') 0 0 no-repeat;
     -webkit-mask-size: 60px 24px;
     mask: url('../img/mask.png') 0 0 no-repeat;
-    background: #fad73f; /* Old browsers */
-    background: -webkit-gradient(radial, center center, 0, center center, 100%, color-stop(0,#fad73f), color(48px,#fad73f), color-stop(49px,#821067)); /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(center, ellipse cover,  #fad73f 0,#fad73f 48px,#821067 49px); /* Chrome10+,Safari5.1+ */
-  
 }
 .has-switch.deactivate {
   opacity: 0.5;
@@ -176,14 +172,8 @@
 }
 .has-switch > div label {
   background-color: #FFFFFF;
-  background: rgb(255,255,255); /* Old browsers */
-  background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(241,241,242,1) 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(241,241,242,1))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(241,241,242,1) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(241,241,242,1) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(241,241,242,1) 100%); /* IE10+ */
-  background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(241,241,242,1) 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f1f1f2',GradientType=0 ); /* IE6-9 */
+  @include icon-gradient (rgba(255,255,255,1), rgba(241,241,242,1));
+  
   box-shadow: 0 1px 1px #FFFFFF inset, 0 1px 1px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
@@ -210,26 +200,24 @@
   transition: 0.25s ease-out;
 }
 .has-switch span.switch-left {
-    background-color: #2C93FF;
+    background-color: $info-color;
     border-left: 1px solid rgba(0, 0, 0, 0);
     border-radius: 30px 0 0 30px;
     color: #FFFFFF;
 }
 .has-switch .switch-off span.switch-left{
-    background-color: #D9D9D9;
+    background-color: $medium-gray;
 }
 .has-switch span.switch-right {
   border-radius: 0 30px 30px 0;
-  background-color: #2C93FF;
+  background-color: $info-color;
   color: #ffffff;
   text-indent: 1px;
 }
 .has-switch .switch-off span.switch-right{
-    background-color: #D9D9D9;
+    background-color: $medium-gray;
 }
-.has-switch span.switch-right [class*="fui-"] {
-  text-indent: 0;
-}
+
 .has-switch label {
     border-radius: 12px;
     float: left;
@@ -255,3 +243,4 @@
     margin: 1px -13px;
     width: 26px;
 }
+

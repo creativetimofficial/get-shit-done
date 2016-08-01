@@ -13,7 +13,7 @@
 .tim-typo{
     padding-left: 25%;
     margin-bottom: 40px;
-    position: relative;
+    position: relative;   
 }
 .tim-typo .tim-note{
     bottom: 10px;
@@ -39,7 +39,6 @@
 #navbar-full .navbar{
     border-radius: 0 !important;
     margin-bottom: 0;
-    z-index: 2;
 }
 .navigation-example{
     margin-top: 0px;
@@ -49,14 +48,8 @@
     display: block;
 }
 .navigation-example .img-src{
-    background-attachment: scroll;
+    background-attachment: scroll; 
 }
-/*
-.main{
-    position: relative;
-    z-index: 4;
-}
-*/
 .main{
     background-color: #FFFFFF;
 }
@@ -92,7 +85,7 @@
     padding-top: 20px;
 }
 .subscribe-form .form-control{
-
+    
 }
 
 .space-100{
@@ -118,7 +111,7 @@
     background-attachment: fixed;
     position: relative;
 }
-.footer .heart{
+.heart{
     color: #FF3B30;
 }
 .footer .overlayer{
@@ -126,8 +119,7 @@
     position: relative;
 }
 .footer .credits {
-   border-top: 1px solid #BBBBBB;
-    margin-top: 85px;
+    margin-top: 25px;
     padding: 20px 0 15px;
     text-align: center;
     color: #EEE;
@@ -147,32 +139,36 @@
     border-left: 0;
     border-right: 0;
 }
-#display-buttons .btn{
-    margin-bottom: 5px;
-}
 .pick-class-label{
     border-radius: 8px;
     color: #ffffff;
     cursor: pointer;
-    display: inline-block;
+    display: inline;
     font-size: 75%;
     font-weight: bold;
     line-height: 1;
     margin-right: 10px;
-    width: 46px;
-    height: 46px;
+    padding: 15px 23px;
     text-align: center;
     vertical-align: baseline;
     white-space: nowrap;
 }
 
-    .parallax-pro{
+.parallax-pro{
   width:100%;
-/*   height:510px; */
   display: block;
   position: relative;
-  overflow: hidden;
-  background-color: #fff;
+  background-color: #000;
+}
+.parallax-pro > .img-src{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    
 }
 .parallax-pro:after{
     position: absolute;
@@ -198,7 +194,7 @@
     font-size: 48px;
     font-weight: 300;
     position: relative;
-    width: 430px;
+/*     width: 430px; */
     margin: 30px auto 50px;
 }
 .parallax-pro .label{
@@ -207,16 +203,14 @@
     text-transform: uppercase;
     background-color: #FF9500;
     color: #FFFFFF;
-    display: block;
     width: 60px;
-    right: -30px;
-    top: 0;
+    margin-top: 10px;
+    margin-left: 10px;
     padding: 0;
     line-height: 30px;
     text-align: center;
     font-weight: 500;
     letter-spacing: 0;
-    height: 30px;
 }
 .parallax-pro small{
     padding-top: 15px;
@@ -276,17 +270,6 @@
     font-weight: 300;
     background-color: #ff9500;
 }
-.parallax-pro > img{
-    width: 100%;
-    position: absolute;
-}
-
-@media (max-width: 768px){
-    .parallax-pro > img{
-/*        height: 100%; */
-       width: 150%;
-    }
-}
 .social-share{
     margin-right: 0px;
     margin-top: 10px;
@@ -321,4 +304,97 @@
 .section-gray h5{
     margin: 0;
     line-height: 40px;
+}
+
+/*   EXTRA SHIT  */
+/* @cristina: fisier singular, folosit pentru efectul de blur la parallax in header */
+
+.blurred-container{
+  position:relative;
+  width:100%;
+  height:540px;
+  top:0;
+  left:0;
+}
+.blurred-container > .img-src{
+    position:fixed;
+    width:100%;
+    height:540px;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center center;
+}
+.blur{
+  opacity:0;
+}
+
+.logo-container{
+    margin-top: 10px;
+}
+.logo-container .logo{
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid #333333;
+    height: 50px;
+    width: 50px;
+    float: left;
+}
+.logo-container .logo img{
+    width: 100%;
+}
+.logo-container .brand{
+    font-size: 18px;
+    color: #FFFFFF;
+    float: left;
+    height: 50px;
+    line-height: 20px;
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 60px;
+}
+.blurred-container .motto{
+    color: #FFFFFF;
+    font-size: 76px;
+    font-weight: 600;
+
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.33);
+    text-transform: uppercase;
+    top: 100px;
+    z-index: 3;
+
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 306px;
+    height: 0;
+}
+.blurred-container .motto .border{
+    float: left;
+    border: 3px solid #FFFFFF;
+    padding: 0px 30px;
+    text-align: center;
+}
+.blurred-container .motto .no-right-border{
+    border-right: none;
+}
+
+@media (max-width: 768px){
+    .blurred-container .motto{
+        font-size: 60px;
+        width: 268px;
+        top: 130px;
+    }
+}
+.main{
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+#buttons .btn, #tooltips .btn{
+    margin-bottom: 15px;
+}
+.img-dog{
+    display: inline-block;
+    margin-bottom: 25px;
 }

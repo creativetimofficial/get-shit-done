@@ -76,7 +76,6 @@
 /* Component containers
 ----------------------------------*/
 .ui-widget {
-	font-family: Verdana,Arial,sans-serif/*{ffDefault}*/;
 	font-size: 1.1em/*{fsDefault}*/;
 }
 .ui-widget .ui-widget {
@@ -86,7 +85,6 @@
 .ui-widget select,
 .ui-widget textarea,
 .ui-widget button {
-	font-family: Verdana,Arial,sans-serif/*{ffDefault}*/;
 	font-size: 1em;
 }
 .ui-widget-content {
@@ -182,19 +180,19 @@
 .ui-state-error,
 .ui-widget-content .ui-state-error,
 .ui-widget-header .ui-state-error {
-	border: 1px solid #cd0a0a/*{borderColorError}*/;
-	background: #fef1ec/*{bgColorError}*/ url(images/ui-bg_glass_95_fef1ec_1x400.png)/*{bgImgUrlError}*/ 50%/*{bgErrorXPos}*/ 50%/*{bgErrorYPos}*/ repeat-x/*{bgErrorRepeat}*/;
-	color: #cd0a0a/*{fcError}*/;
+	border: 1px solid $danger-color/*{borderColorError}*/;
+	background-color: $danger-color;
+	color: $danger-color/*{fcError}*/;
 }
 .ui-state-error a,
 .ui-widget-content .ui-state-error a,
 .ui-widget-header .ui-state-error a {
-	color: #cd0a0a/*{fcError}*/;
+	color: $danger-color/*{fcError}*/;
 }
 .ui-state-error-text,
 .ui-widget-content .ui-state-error-text,
 .ui-widget-header .ui-state-error-text {
-	color: #cd0a0a/*{fcError}*/;
+	color: $danger-color/*{fcError}*/;
 }
 .ui-priority-primary,
 .ui-widget-content .ui-priority-primary,
