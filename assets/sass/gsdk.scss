@@ -1,3 +1,38 @@
+/*! =========================================================
+ *
+ * Get Shit Done Kit Free - v2.0.0
+ * Bootstrap - v4.0.0-alpha.4
+ * License - Creative Tim License
+ *
+ * =========================================================
+ *
+ *
+ *                       _oo0oo_
+ *                      o8888888o
+ *                      88" . "88
+ *                      (| -_- |)
+ *                      0\  =  /0
+ *                    ___/`---'\___
+ *                  .' \\|     |// '.
+ *                 / \\|||  :  |||// \
+ *                / _||||| -:- |||||- \
+ *               |   | \\\  -  /// |   |
+ *               | \_|  ''\---/''  |_/ |
+ *               \  .-\__  '-'  ___/-. /
+ *             ___'. .'  /--.--\  `. .'___
+ *          ."" '<  `.___\_<|>_/___.' >' "".
+ *         | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+ *         \  \ `_.   \_ __\ /__ _/   .-` /  /
+ *     =====`-.____`.___ \_____/___.-`___.-'=====
+ *                       `=---='
+ *
+ *     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ *
+ *               Buddha Bless:  "No Bugs"
+ *
+ * ========================================================= */
+
+
 @import "gsdk/variables";
 @import "gsdk/mixins";
 @import "gsdk/typography";
@@ -15,11 +50,12 @@
 
 
 // Fancy Stuff
-
 @import "gsdk/dropdown";
 @import "gsdk/tabs-navs-pagination";
 @import "gsdk/collapse";
 @import "gsdk/carousel";
 @import "gsdk/modal";
-@import "gsdk/responsive";
 
+// Plugins
+@import "gsdk/plugins/tether";
+@import "gsdk/responsive";
