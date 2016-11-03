@@ -1,3 +1,8 @@
+/*!
+ * Copyright 2016 Creative Tim (http://www.creative-tim.com)
+ * Licensed under MIT (https://github.com/timcreative/get-shit-done/blob/master/LICENSE.md)
+ */
+
 searchVisible = 0;
 transparent = true;
 
