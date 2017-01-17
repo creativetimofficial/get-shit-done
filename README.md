@@ -1,18 +1,89 @@
-get-shit-done
-=============
+# [Get Shit Done Kit - Free Bootstrap UI Kit](http://demos.creative-tim.com/get-shit-done/index.html)
 
-A free UI Kit built on Twitter Bootstrap
+![Get Shit Done Kit](http://s3.amazonaws.com/creativetim_bucket/products/17/original/GSDK_thumbnail3.png?1431435570 "Get Shit Done Kit")
 
-If you want to see more information, please go to http://www.creative-tim.com/product/get-shit-done-kit
+Free Bootstrap 3 UI Kit, the best starting point for any online project you are building. It magically offers responsive design and easy to use elements. It has became a trademark for the online community of a clean and nice looking interface.
 
-'Get Shit Done' kit is a beautiful resource built for Bootstrap. We have redesigned all its components to make it look flat, minimalist and easy to use. We are proud of this new Bootstrap skin and the possibilities for customisation.
+Using Bootstrap straight out of the box doesn't solve design. The team behind Creative Tim strongly believes in this argument and has made this kit following this perspective. Customization is vital for any project using Bootstrap.
 
-Using it is very simple and it will enable you to refresh you classic looking application. To get the desired effect you will also need to integrate JS plugins that take a little bit more effort. It the end the result will be worth it.
+So how can you enjoy the Bootstrap benefits and have a facelift for your project? Simply import the Get Shit Done Kit into your project or start building on top of it. It easy to use and integrate.
 
-The 'Get Shit Done' kit is built on top of Bootstrap 3, so you can safely use it on your existing or new Bootstrap project. No line of code from Bootstrap 3 was changed, so you don't have to worry about undesired effects in your work.            We provide all the necessary CSS resources. To get going, just include 'css/get-shit-done.css' in your HTML template. Your project will get the new look.
 
-The easiest way to start is to use our start-up template where all the files are already included and ready to use.
+## Links:
 
-You can go to www.creative-tim.com/get-shit-done to see the great preview!
++ [Live Preview](http://demos.creative-tim.com/get-shit-done/index.html)
++ [Get Shit Done PRO](http://gsdk.creative-tim.com/) (from $39)
+
+## Quick start
+
+Quick start options:
+
+- [Download from Github](https://github.com/timcreative/get-shit-done.git).
+- [Download from Creative Tim](http://www.creative-tim.com/product/get-shit-done-kit).
+- Clone the repo: `git clone https://github.com/timcreative/get-shit-done.git`.
+
+
+### What's included
+
+Within the download you'll find the following directories and files:
+
+```
+get-shit-done/
+├── assets/
+│   ├── css/
+│   │   ├── demo.css
+│   │   └── gsdk.css
+│   ├── img/
+│   ├── js/
+│   │   ├── custom.js
+│   │   ├── get-shit-done.js
+│   │   ├── gsdk-bootstrapswitch.js
+│   │   ├── gsdk-checkbox.js
+│   │   ├── gsdk-radio.js
+│   │   ├── jquery-ui-1.10.4.custom.min.js
+│   │   └── presentation-page
+│   └── sass/
+│       ├── gsdk/
+│       └── gsdk.scss
+├── bootstrap3/
+├── components.html
+├── index.html
+├── jquery
+├── navbar-transparent.html
+├── notification.html
+├── template.html
+└── tutorial.html
+
+```
+
+### Version logs
+
+- V1.0.0 - 09.05.2014 Initial Release
+- V1.1.0 - 22.09.2014 Added discount for Get Shit Done Kit PRO
+- V1.2.0 - 30.04.2015 Bug Fixing and documentation changes
+- V1.3.0 - 30.01.2016 Small updates
+- V1.4.0 - 01.08.2016 Added SASS files 
+
+## Useful Links
+
+More products from Creative Tim: <http://www.creative-tim.com/products>
+
+Tutorials: <https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w>
+
+Freebies: <http://www.creative-tim.com/products>
+
+Affiliate Program (earn money): <http://www.creative-tim.com/affiliates/new>
+
+Social Media:
+
+Twitter: <https://twitter.com/CreativeTim>
+
+Facebook: <https://www.facebook.com/CreativeTim>
+
+Dribbble: <https://dribbble.com/creativetim>
+
+Google+: <https://plus.google.com/+CreativetimPage>
+
+Instagram: <https://instagram.com/creativetimofficial>
       
 
