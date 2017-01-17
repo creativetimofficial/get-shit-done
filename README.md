@@ -4,7 +4,7 @@
 
 Free Bootstrap 3 UI Kit, the best starting point for any online project you are building. It magically offers responsive design and easy to use elements. It has became a trademark for the online community of a clean and nice looking interface.
 
-Using Bootstrap straight out of the box doesn't solve design. The team behind Creative Tim strongly believes in this argument and has made this kit following this perspective. Customization is vital for any project using Bootstrap.
+Using Bootstrap straight out of the box doesn't solve design. The team behind Creative Tim strongly believes in this argument and has made this kit following this perspective. Customisation is vital for any project using Bootstrap.
 
 So how can you enjoy the Bootstrap benefits and have a facelift for your project? Simply import the Get Shit Done Kit into your project or start building on top of it. It easy to use and integrate.
 
@@ -63,6 +63,12 @@ get-shit-done/
 - V1.2.0 - 30.04.2015 Bug Fixing and documentation changes
 - V1.3.0 - 30.01.2016 Small updates
 - V1.4.0 - 01.08.2016 Added SASS files 
+
+## License
+
+ - Copyright 2017 Creative Tim (http://www.creative-tim.com)
+ - Licensed under MIT (https://github.com/timcreative/get-shit-done/blob/master/LICENSE.md)
+
 
 ## Useful Links
 

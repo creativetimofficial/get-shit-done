@@ -5,7 +5,7 @@
  =========================================================
  
  * Product Page: http://www.creative-tim.com/product/get-shit-done-kit
- * Copyright 2016 Creative Tim (http://www.creative-tim.com)
+ * Copyright 2017 Creative Tim (http://www.creative-tim.com)
  * Licensed under MIT (https://github.com/timcreative/get-shit-done/blob/master/LICENSE.md)
  
  =========================================================
