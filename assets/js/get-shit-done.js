@@ -1,7 +1,7 @@
 /*!
     
  =========================================================
- * Get Shit Done Kit - v1.4.0.0
+ * Get Shit Done Kit - v1.4.1.0
  =========================================================
  
  * Product Page: http://www.creative-tim.com/product/get-shit-done-kit

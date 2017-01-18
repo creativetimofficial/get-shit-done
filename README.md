@@ -18,9 +18,9 @@ So how can you enjoy the Bootstrap benefits and have a facelift for your project
 
 Quick start options:
 
-- [Download from Github](https://github.com/timcreative/get-shit-done.git).
+- [Download from Github](https://github.com/creativetimofficial/get-shit-done).
 - [Download from Creative Tim](http://www.creative-tim.com/product/get-shit-done-kit).
-- Clone the repo: `git clone https://github.com/timcreative/get-shit-done.git`.
+- Clone the repo: `git clone https://github.com/creativetimofficial/get-shit-done`.
 
 
 ### What's included
@@ -62,7 +62,8 @@ get-shit-done/
 - V1.1.0 - 22.09.2014 Added discount for Get Shit Done Kit PRO
 - V1.2.0 - 30.04.2015 Bug Fixing and documentation changes
 - V1.3.0 - 30.01.2016 Small updates
-- V1.4.0 - 01.08.2016 Added SASS files 
+- V1.4.0 - 01.08.2016 Added SASS files
+- V1.4.1 - 18.01.2017 Switched to MIT license [current version]
 
 ## License
 
