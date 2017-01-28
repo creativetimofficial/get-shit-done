@@ -8,28 +8,54 @@
 }
 .navbar{
     border: $none;
-    font-size: $font-size-navbar;
+    font-size: $font-size-base;
+    box-shadow: 0 12px 20px -12px rgba(0,0,0,0.22);
+
     padding: 0;
     transition: all 0.4s;
     -webkit-transition: all 0.4s;
 
     .navbar-brand {
         font-weight: $font-weight-bold;
-        margin: $navbar-margin-brand;
         padding: $navbar-padding-brand;
         font-size: $font-size-large-navbar;
-        line-height: 20px;
     }
+
+    .navbar-brand-logo{
+        padding: 10px 0;
+
+        .logo{
+           overflow: hidden;
+           border-radius: 50%;
+           border: 1px solid #333333;
+           height: 50px;
+           width: 50px;
+           float: left;
+       }
+       .logo img{
+           width: 100%;
+       }
+       .brand{
+           font-size: 18px;
+            color: #FFFFFF;
+            float: left;
+            line-height: 50px;
+            margin-left: 10px;
+       }
+    }
+
     .navbar-nav{
-         > li > a {
-             padding: $navbar-padding-a;
+        .nav-link {
+             padding: $padding-base-vertical + 2 13px;
              margin: $navbar-margin-a;
+             line-height: $line-height;
          }
-         > li > a.btn{
-             margin: $navbar-margin-a-btn;
+         .nav-link.btn{
+             padding: $padding-base-vertical $padding-base-horizontal;
          }
-         > li > a.btn-round{
-             margin: $navbar-margin-a-btn-round;
+         .nav-link.btn-round{
+             margin: $margin-base-vertical 0;
+             padding: ($padding-base-vertical + 1) $padding-base-horizontal;
          }
          > li > a [class^="fa"]{
              font-size: $font-size-large + 1;
@@ -38,7 +64,7 @@
         }
     }
     .btn{
-       margin: $navbar-margin-btn;
+       margin: $margin-base-vertical 0;
        font-size: $font-size-base;
     }
     .btn-simple{
@@ -75,10 +101,8 @@
     }
 
     .navbar-nav{
-        .nav-link,
-        .nav-link.btn-default{
+        .nav-link{
             color: $white-color;
-            border-color: $white-color;
             @include opacity(0.8);
         }
 
@@ -92,13 +116,8 @@
         .nav-link:hover,
         .nav-link:focus{
             background-color: transparent;
-            border-radius: 3px;
             color: $white-color;
             @include opacity(1);
-        }
-
-        .nav > li > a.btn:hover{
-            background-color: transparent;
         }
 
         > .dropdown > a .caret,
@@ -260,8 +279,8 @@
 
 .navbar-transparent{
     padding-top: 15px;
+    box-shadow: none;
     background-color: transparent;
-    border-bottom: 1px solid transparent;
 }
 
 .navbar-toggle{

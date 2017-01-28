@@ -1,7 +1,6 @@
 
 .tim-container{
     background: #ffffff;
-
 }
 .tim-row{
     margin-bottom: 20px;
@@ -13,7 +12,7 @@
 .tim-typo{
     padding-left: 25%;
     margin-bottom: 40px;
-    position: relative;   
+    position: relative;
 }
 .tim-typo .tim-note{
     bottom: 10px;
@@ -48,11 +47,9 @@
     display: block;
 }
 .navigation-example .img-src{
-    background-attachment: scroll; 
+    background-attachment: scroll;
 }
-.main{
-    background-color: #FFFFFF;
-}
+
 .navigation-example{
     height: 660px;
     background-image: url('../img/bg.jpg');
@@ -85,7 +82,7 @@
     padding-top: 20px;
 }
 .subscribe-form .form-control{
-    
+
 }
 
 .space-100{
@@ -168,7 +165,7 @@
     width: 100%;
     height: 100%;
     z-index: 0;
-    
+
 }
 .parallax-pro:after{
     position: absolute;
@@ -328,30 +325,6 @@
   opacity:0;
 }
 
-.logo-container{
-    margin-top: 10px;
-}
-.logo-container .logo{
-    overflow: hidden;
-    border-radius: 50%;
-    border: 1px solid #333333;
-    height: 50px;
-    width: 50px;
-    float: left;
-}
-.logo-container .logo img{
-    width: 100%;
-}
-.logo-container .brand{
-    font-size: 18px;
-    color: #FFFFFF;
-    float: left;
-    height: 50px;
-    line-height: 20px;
-    margin-left: 10px;
-    margin-top: 5px;
-    width: 60px;
-}
 .blurred-container .motto{
     color: #FFFFFF;
     font-size: 76px;
@@ -386,11 +359,6 @@
         top: 130px;
     }
 }
-.main{
-    background-color: #FFFFFF;
-    position: relative;
-}
-
 #buttons .btn, #tooltips .btn{
     margin-bottom: 15px;
 }

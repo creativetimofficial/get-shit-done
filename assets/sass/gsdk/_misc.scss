@@ -5,17 +5,18 @@ body{
 .main{
     background-color: #FFFFFF;
     position: relative;
+    padding: 70px 0
 }
 a{
   color: $info-color;
-    
+
   &:hover, &:focus{
-     color: $info-states-color; 
-     text-decoration: none; 
+     color: $info-states-color;
+     text-decoration: none;
   }
 }
 
-a:focus, a:active, 
+a:focus, a:active,
 button::-moz-focus-inner,
 input[type="reset"]::-moz-focus-inner,
 input[type="button"]::-moz-focus-inner,
@@ -30,8 +31,8 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 }
 
 /*           Animations              */
-.form-control, 
-.input-group-addon, 
+.form-control,
+.input-group-addon,
 .tagsinput,
 .navbar,
 .navbar .alert{
@@ -48,9 +49,9 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 
 /*       CT colors          */
-.ct-blue, 
+.ct-blue,
 .ct-blue.checkbox.checked .second-icon,
-.ct-blue.checkbox.checked, 
+.ct-blue.checkbox.checked,
 .ct-blue.radio.checked .second-icon,
 .ct-blue.radio.checked{
     color: $primary-color;
@@ -58,49 +59,48 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 .ct-azzure,
 .ct-azzure.checkbox.checked .second-icon,
 .ct-azzure.radio.checked .second-icon,
-.ct-azzure.checkbox.checked, 
+.ct-azzure.checkbox.checked,
 .ct-azzure.radio.checked{
     color: $info-color;
 }
 .ct-green,
-.ct-green.checkbox.checked .second-icon, 
-.ct-green.radio.checked .second-icon, 
-.ct-green.checkbox.checked, 
+.ct-green.checkbox.checked .second-icon,
+.ct-green.radio.checked .second-icon,
+.ct-green.checkbox.checked,
 .ct-green.radio.checked{
     color: $success-color;
 }
-.ct-orange, 
-.ct-orange.checkbox.checked .second-icon, 
-.ct-orange.radio.checked .second-icon, 
-.ct-orange.checkbox.checked, 
+.ct-orange,
+.ct-orange.checkbox.checked .second-icon,
+.ct-orange.radio.checked .second-icon,
+.ct-orange.checkbox.checked,
 .ct-orange.radio.checked{
     color: $warning-color;
 }
-.ct-red, 
-.ct-red.checkbox.checked .second-icon, 
-.ct-red.radio.checked .second-icon, 
-.ct-red.checkbox.checked, 
+.ct-red,
+.ct-red.checkbox.checked .second-icon,
+.ct-red.radio.checked .second-icon,
+.ct-red.checkbox.checked,
 .ct-red.radio.checked{
     color: $danger-color;
 }
-input.ct-blue + span.switch-left, 
+input.ct-blue + span.switch-left,
 input.ct-blue + span + label + span.switch-right{
     background-color:  $primary-color;
 }
-input.ct-azzure + span.switch-left, 
+input.ct-azzure + span.switch-left,
 input.ct-azure + span + label + span.switch-right{
     background-color:  $info-color;
 }
-input.ct-green + span.switch-left, 
+input.ct-green + span.switch-left,
 input.ct-green + span + label + span.switch-right{
     background-color:  $success-color;
 }
-input.ct-orange + span.switch-left, 
+input.ct-orange + span.switch-left,
 input.ct-orange + span + label + span.switch-right{
     background-color:  $warning-color;
 }
-input.ct-red + span.switch-left, 
+input.ct-red + span.switch-left,
 input.ct-red + span + label + span.switch-right{
     background-color:  $danger-color;
 }
-

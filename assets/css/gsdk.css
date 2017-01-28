@@ -104,7 +104,8 @@ body {
 
 .main {
   background-color: #FFFFFF;
-  position: relative; }
+  position: relative;
+  padding: 70px 0; }
 
 a {
   color: #2CA8FF; }
@@ -204,6 +205,8 @@ input.ct-red + span + label + span.switch-right {
   border-width: 2px;
   background-color: transparent;
   font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   opacity: 0.8;
   filter: alpha(opacity=80);
   padding: 8px 16px;
@@ -488,7 +491,7 @@ input.ct-red + span + label + span.switch-right {
       border-color: #FF3B30; }
   .form-control + .form-control-feedback {
     border-radius: 6px;
-    font-size: 14px;
+    font-size: 0.875rem;
     padding: 0 12px 0 0;
     position: absolute;
     right: 25px;
@@ -872,7 +875,7 @@ input.ct-red + span + label + span.switch-right {
   height: 2px; }
 
 .tooltip {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600; }
   .tooltip.top {
     margin-top: -11px;
@@ -1215,30 +1218,48 @@ input.ct-red + span + label + span.switch-right {
 
 .navbar {
   border: 0;
-  font-size: 16px;
+  font-size: 0.875rem;
+  box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.22);
   padding: 0;
   transition: all 0.4s;
   -webkit-transition: all 0.4s; }
   .navbar .navbar-brand {
     font-weight: 600;
-    margin: 5px 0px;
     padding: 20px 15px;
-    font-size: 20px;
-    line-height: 20px; }
-  .navbar .navbar-nav > li > a {
-    padding: 10px 15px;
-    margin: 15px 3px; }
-  .navbar .navbar-nav > li > a.btn {
-    margin: 15px 3px; }
-  .navbar .navbar-nav > li > a.btn-round {
-    margin: 16px 3px; }
+    font-size: 20px; }
+  .navbar .navbar-brand-logo {
+    padding: 10px 0; }
+    .navbar .navbar-brand-logo .logo {
+      overflow: hidden;
+      border-radius: 50%;
+      border: 1px solid #333333;
+      height: 50px;
+      width: 50px;
+      float: left; }
+    .navbar .navbar-brand-logo .logo img {
+      width: 100%; }
+    .navbar .navbar-brand-logo .brand {
+      font-size: 18px;
+      color: #FFFFFF;
+      float: left;
+      line-height: 50px;
+      margin-left: 10px; }
+  .navbar .navbar-nav .nav-link {
+    padding: 10px 13px;
+    margin: 15px 0px;
+    line-height: 1.25rem; }
+  .navbar .navbar-nav .nav-link.btn {
+    padding: 8px 16px; }
+  .navbar .navbar-nav .nav-link.btn-round {
+    margin: 15px 0;
+    padding: 9px 16px; }
   .navbar .navbar-nav > li > a [class^="fa"] {
     font-size: 19px;
     position: relative;
     top: 1px; }
   .navbar .btn {
-    margin: 15px 3px;
-    font-size: 14px; }
+    margin: 15px 0;
+    font-size: 0.875rem; }
   .navbar .btn-simple {
     font-size: 16px; }
 
@@ -1271,19 +1292,12 @@ input.ct-red + span + label + span.switch-right {
     opacity: 1;
     filter: alpha(opacity=100); }
 .navbar-transparent .navbar-nav .nav-link,
-.navbar-transparent .navbar-nav .nav-link.btn-default,
 .navbar-primary .navbar-nav .nav-link,
-.navbar-primary .navbar-nav .nav-link.btn-default,
 .navbar-info .navbar-nav .nav-link,
-.navbar-info .navbar-nav .nav-link.btn-default,
 .navbar-success .navbar-nav .nav-link,
-.navbar-success .navbar-nav .nav-link.btn-default,
 .navbar-warning .navbar-nav .nav-link,
-.navbar-warning .navbar-nav .nav-link.btn-default,
-.navbar-danger .navbar-nav .nav-link,
-.navbar-danger .navbar-nav .nav-link.btn-default {
+.navbar-danger .navbar-nav .nav-link {
   color: #FFFFFF;
-  border-color: #FFFFFF;
   opacity: 0.8;
   filter: alpha(opacity=80); }
 .navbar-transparent .navbar-nav > li > a.btn-default:hover,
@@ -1320,17 +1334,9 @@ input.ct-red + span + label + span.switch-right {
 .navbar-danger .navbar-nav .nav-link:hover,
 .navbar-danger .navbar-nav .nav-link:focus {
   background-color: transparent;
-  border-radius: 3px;
   color: #FFFFFF;
   opacity: 1;
   filter: alpha(opacity=100); }
-.navbar-transparent .navbar-nav .nav > li > a.btn:hover,
-.navbar-primary .navbar-nav .nav > li > a.btn:hover,
-.navbar-info .navbar-nav .nav > li > a.btn:hover,
-.navbar-success .navbar-nav .nav > li > a.btn:hover,
-.navbar-warning .navbar-nav .nav > li > a.btn:hover,
-.navbar-danger .navbar-nav .nav > li > a.btn:hover {
-  background-color: transparent; }
 .navbar-transparent .navbar-nav > .dropdown > a .caret,
 .navbar-transparent .navbar-nav > .dropdown > a:hover .caret,
 .navbar-transparent .navbar-nav > .dropdown > a:focus .caret,
@@ -1520,8 +1526,8 @@ input.ct-red + span + label + span.switch-right {
 
 .navbar-transparent {
   padding-top: 15px;
-  background-color: transparent;
-  border-bottom: 1px solid transparent; }
+  box-shadow: none;
+  background-color: transparent; }
 
 .navbar-toggle {
   margin-top: 19px;

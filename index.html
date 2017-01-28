@@ -19,19 +19,31 @@
     <link href="assets/css/demo.css" rel="stylesheet" />
 
     <!--     Font Awesome     -->
-    <link href="bootstrap3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
     <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
-	<nav class="navbar navbar-full navbar-info navbar-fixed-top">
+	<nav class="navbar navbar-full navbar-info navbar-fixed-top navbar-transparent" data-color-on-scroll="300px">
 		<div class="container">
-			<a class="navbar-brand" href="#">GSDK - wip</a>
+			<!-- <a class="navbar-brand" href="#">GSDK - wip</a> -->
 
-			<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
+			<a class="navbar-brand navbar-brand-logo"href="http://creative-tim.com">
+				 <div class="logo-container">
+					<div class="logo" rel="tooltip" data-trigger="click" data-toggle="tooltip" title="Product certified by: <b>Creative Tim</b>" data-html="true" data-placement="bottom">
+						<img src="assets/img/new_logo.png">
+					</div>
+					<div class="brand">
+						GSD Kit [wip]
+					</div>
+				</div>
+			</a>
+
+			<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
 			&#9776;
 			</button>
-			<div class="collapse navbar-toggleable-md" id="exCollapsingNavbar2">
+			<div class="collapse navbar-toggleable-md" id="exCollapsingNavbar">
 
 				<ul class="nav navbar-nav pull-xs-right">
 					<li class="nav-item active">
@@ -44,7 +56,7 @@
 						<a class="nav-link" href="#">Components</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link btn btn-default btn-round" href="#">Download</a>
+						<a class="btn btn-default btn-round" href="#">Download</a>
 					</li>
 				</ul>
 			</div>
@@ -53,8 +65,8 @@
 	</nav>
 
 
-    <div class="container">
-        <nav class="navbar navbar-ct-blue navbar-transparent navbar-fixed-top" style="display:none" role="navigation">
+    <div class="container" style="display:none">
+        <nav class="navbar navbar-ct-blue navbar-transparent navbar-fixed-top" role="navigation">
 
           <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -866,7 +878,6 @@
 	<script src="assets/js/tether.min.js" type="text/javascript"></script>
 	<!-- Bootstrap 4 Alpha-4 -->
 	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
-
 
 	<!-- Plugins -->
 
