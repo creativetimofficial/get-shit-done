@@ -1,13 +1,12 @@
-//Utilities 
-
+//Utilities
+@import "mixins/hover";
 @import "mixins/transparency";
 @import "mixins/vendor-prefixes";
+@import "mixins/background-variant";
 
 //Components
-
 @import "mixins/buttons";
 @import "mixins/inputs";
 @import "mixins/labels";
 @import "mixins/tabs";
 @import "mixins/navbars";
-

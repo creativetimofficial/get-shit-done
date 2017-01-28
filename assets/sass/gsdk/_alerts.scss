@@ -4,10 +4,10 @@
     color: #FFFFFF;
     padding: 10px 15px;
     font-size: 14px;
-    
+
     .container &{
         border-radius: 4px;
-    
+
     }
     .navbar &{
         border-radius: 0;
@@ -23,15 +23,14 @@
     }
 }
 .alert-info{
-     background-color: $azure-navbar;
+     background-color: $info-navbar;
 }
 .alert-success {
-    background-color: $green-navbar;
+    background-color: $success-navbar;
 }
 .alert-warning {
-     background-color: $orange-navbar;
+     background-color: $warning-navbar;
 }
 .alert-danger {
-     background-color: $red-navbar;
+     background-color: $danger-navbar;
 }
-

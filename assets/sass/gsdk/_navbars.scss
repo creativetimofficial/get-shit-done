@@ -9,6 +9,7 @@
 .navbar{
     border: $none;
     font-size: $font-size-navbar;
+    padding: 0;
     transition: all 0.4s;
     -webkit-transition: all 0.4s;
 
@@ -17,6 +18,7 @@
         margin: $navbar-margin-brand;
         padding: $navbar-padding-brand;
         font-size: $font-size-large-navbar;
+        line-height: 20px;
     }
     .navbar-nav{
          > li > a {
@@ -25,7 +27,6 @@
          }
          > li > a.btn{
              margin: $navbar-margin-a-btn;
-             padding: $padding-base-vertical $padding-base-horizontal;
          }
          > li > a.btn-round{
              margin: $navbar-margin-a-btn-round;
@@ -55,7 +56,12 @@
     margin-top: -5px;
 }
 
-.navbar-transparent, [class*="navbar-ct"]{
+.navbar-transparent,
+.navbar-primary,
+.navbar-info,
+.navbar-success,
+.navbar-warning,
+.navbar-danger{
     .navbar-brand{
         color: $white-color;
         @include opacity(.9);
@@ -69,8 +75,8 @@
     }
 
     .navbar-nav{
-        > li > a:not(.btn),
-        > li > a.btn-default{
+        .nav-link,
+        .nav-link.btn-default{
             color: $white-color;
             border-color: $white-color;
             @include opacity(0.8);
@@ -82,16 +88,15 @@
             @include opacity(1);
         }
 
-        > .active > a:not(.btn),
-        > .active > a:hover:not(.btn),
-        > .active > a:focus:not(.btn),
-        > li > a:hover:not(.btn),
-        > li > a:focus:not(.btn){
+        .active .nav-link,
+        .nav-link:hover,
+        .nav-link:focus{
             background-color: transparent;
             border-radius: 3px;
             color: $white-color;
             @include opacity(1);
         }
+
         .nav > li > a.btn:hover{
             background-color: transparent;
         }
@@ -237,20 +242,20 @@
 
 }
 
-.navbar-ct-blue{
-    @include navbar-color($blue-navbar);
+.navbar-primary{
+    @include navbar-color($primary-navbar);
 }
-.navbar-ct-azzure{
-    @include navbar-color($azure-navbar);
+.navbar-info{
+    @include navbar-color($info-navbar);
 }
-.navbar-ct-green{
-    @include navbar-color($green-navbar);
+.navbar-success{
+    @include navbar-color($success-navbar);
 }
-.navbar-ct-orange{
-    @include navbar-color($orange-navbar);
+.navbar-warning{
+    @include navbar-color($warning-navbar);
 }
-.navbar-ct-red{
-    @include navbar-color($red-navbar);
+.navbar-danger{
+    @include navbar-color($danger-navbar);
 }
 
 .navbar-transparent{
