@@ -5,7 +5,7 @@
 .tim-row{
     margin-bottom: 20px;
 }
-.tim-title{
+.title{
     margin-top: 30px;
     margin-bottom: 15px;
 }
@@ -365,4 +365,10 @@
 .img-dog{
     display: inline-block;
     margin-bottom: 25px;
+}
+
+
+/*   Sections small adjustments */
+#sectionInputs label{
+    display: block;
 }

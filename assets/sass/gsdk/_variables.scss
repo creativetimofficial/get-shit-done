@@ -56,6 +56,7 @@ $brand-danger:               $danger-color;
 $brand-inverse:              $black-color;
 
 $link-disabled-color:        #666666 !default;
+$disabled-opacity:           .5 !default;
 
 
 /*      light colors         */
@@ -80,6 +81,8 @@ $enable-print-styles:       true !default;
 
 //== Components
 //
+
+$padding-base:              15px !default;
 
 $padding-base-vertical:         8px !default;
 $padding-base-horizontal:      16px !default;

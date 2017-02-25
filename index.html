@@ -6,19 +6,22 @@
 	<link rel="icon" type="image/png" href="assets/img/favicon.png">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<title>Get Shit Done Kit by Creative Tim</title>
+	<title>BS4 Get Shit Done Kit by Creative Tim</title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
 
-	<!-- Bootstrap v4.0.0-alpha.4  -->
+	<!-- Bootstrap v4.0.0-alpha.6  -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
 	<!-- Core CSS of Get Shit Done Kit -->
 	<link href="assets/css/gsdk.css" rel="stylesheet" />
 	<!-- CSS for Demo purposes, don't include it in your project -->
     <link href="assets/css/demo.css" rel="stylesheet" />
 
-    <!--     Font Awesome     -->
+    <!--     Font and Icons    -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+	<link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
 
     <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
@@ -119,12 +122,12 @@
 <div class="main">
     <div class="container tim-container">
 
-        <div class="tim-title">
+        <div class="title">
             <h2>Basic Elements</h2>
         </div>
 
         <div id="buttons">
-                <div class="tim-title">
+                <div class="title">
                     <h3>Buttons <small> Pick your class </small></h3>
                 </div>
 
@@ -158,13 +161,13 @@
         </div>
     <!-- end buttons div -->
 
-        <div id="inputs">
-            <div class="tim-title">
+        <div class="section" id="sectionInputs">
+            <div class="title">
                 <h3>Inputs</h3>
             </div>
 
              <div class="row">
-                    <div class="col-sm-3">
+                <div class="col-sm-3">
                 	<div class="form-group">
         	        	<input type="text" value="" placeholder="Inactive" class="form-control" />
                 	</div>
@@ -194,55 +197,72 @@
 
             <div class="row">
                 <div class="col-sm-3">
-                    <div class="tim-title">
+                    <div class="title">
                         <h3>Checkboxes</h3>
                     </div>
 
-                      <label class="checkbox" for="checkbox1">
-                        <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
-                        Unchecked
-                      </label>
-                      <label class="checkbox" for="checkbox2">
-                        <input type="checkbox" value="" id="checkbox2" data-toggle="checkbox" checked>
-                        Checked
-                      </label>
-                      <label class="checkbox" for="checkbox3">
-                        <input type="checkbox" value="" id="checkbox3" data-toggle="checkbox" disabled>
-                        Disabled unchecked
-                      </label>
-                      <label class="checkbox" for="checkbox4">
-                        <input type="checkbox" value="" id="checkbox4" data-toggle="checkbox" disabled checked>
-                        Disabled checked
-                      </label>
+					<div class="checkbox">
+						<input id="checkbox1" type="checkbox">
+						<label for="checkbox1">
+							Unchecked
+						</label>
+					</div>
+					<div class="checkbox">
+						<input id="checkbox2" type="checkbox" checked="">
+						<label for="checkbox2">
+							Checked
+						</label>
+					</div>
+					<div class="checkbox">
+						<input id="checkbox3" type="checkbox" disabled="">
+						<label for="checkbox3">
+							Disabled unchecked
+						</label>
+					</div>
+					<div class="checkbox">
+						<input id="checkbox4" type="checkbox" checked="" disabled="">
+						<label for="checkbox4">
+							Disabled checked
+						</label>
+					</div>
+
                 </div>
 
                 <div class="col-sm-3">
-                    <div class="tim-title">
+                    <div class="title">
                         <h3>Radio Buttons</h3>
                     </div>
+					<div class="radio">
+						<input type="radio" name="radio1" id="radio1" value="option1">
+						<label for="radio1">
+							Radio is off
+						</label>
+					</div>
 
-                       <label class="radio">
-                        <input type="radio" name="optionsRadios" data-toggle="radio" id="optionsRadios1" value="option1">
-                        <i></i>Radio is off
-                      </label>
-                      <label class="radio">
-                        <input type="radio" name="optionsRadios" data-toggle="radio" id="optionsRadios2" value="option1" checked>
-                        <i></i>Radio is on
-                      </label>
+					<div class="radio">
+						<input type="radio" name="radio1" id="radio2" value="option2" checked="">
+						<label for="radio2">
+							Radio is on
+						</label>
+					</div>
 
-                      <label class="radio">
-                        <input type="radio" name="optionsRadiosDisabled" data-toggle="radio" id="optionsRadios3" value="option2" disabled>
-                        <i></i>Disabled radio is off
-                      </label>
-                      <label class="radio">
-                        <input type="radio" name="optionsRadiosDisabled" data-toggle="radio" id="optionsRadios4" value="option2" checked disabled>
-                        <i></i>Disabled radio is on
-                      </label>
+					<div class="radio">
+						<input type="radio" name="radio3" id="radio3" value="option3" disabled="">
+						<label for="radio3">
+							Disabled radio is off
+						</label>
+					</div>
 
+					<div class="radio">
+						<input type="radio" name="radio4" id="radio4" value="option4" checked="" disabled="">
+						<label for="radio4">
+							Disabled radio is on
+						</label>
+					</div>
                 </div>
 
                 <div class="col-sm-3">
-                    <div class="tim-title">
+                    <div class="title">
                         <h3>Switches</h3>
                         <!--
 
@@ -266,9 +286,15 @@
                     </div>
                 </div>
 
-                <div class="col-sm-3">
+				<div class="col-sm-3">
+					<div class="title">
+                        <h3>Sliders</h3>
+                    </div>
+                    <div id="slider-default" class="slider-info"></div>
+                    <br>
+                    <div id="slider-range" class="slider-success"></div>
 
-                </div>
+				</div>
 
             </div><!--  end row -->
 
@@ -277,7 +303,7 @@
         <div id="menu-dropdown">
             <div class="row">
                 <div class="col-md-7">
-                    <div class="tim-title">
+                    <div class="title">
                         <h3>Menu & Dropdown</h3>
                     </div>
 
@@ -323,7 +349,7 @@
 
             </div> <!-- end row -->
         </div> <!-- end menu-dropdown -->
-        <div class="tim-title">
+        <div class="title">
         <h3>Transparent Navigation
              <a href="navbar-transparent.html" target="_blank" class="btn btn-info btn-fill">Live Preview</a>
         </h3>
@@ -394,7 +420,29 @@
          <div id="sliders-navigation">
             <div class="row">
                 <div class="col-md-6 ">
-                    <div class="tim-title">
+					<div class="title">
+                        <h3>Navigation Pills<h3>
+                    </div>
+
+					<!--  color-classes: "ct-blue", "ct-azure", "ct-orange", "ct-red", "ct-green"
+						  special-classes: "no-border"
+					-->
+					<ul class="nav nav-pills nav-pills-azure" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" data-toggle="tab" href="#link1" role="tab">Active</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#link2" role="tab" href="#">Link</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#link2" role="tab" href="#">Link</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link disabled" data-toggle="tab" href="#link2" role="tab" href="#">Disabled</a>
+						</li>
+					</ul>
+
+                    <div class="title">
                         <h3>Progress Bars</h3>
                     </div>
                     <div class="progress">
@@ -418,37 +466,88 @@
                         <span class="sr-only">10% Complete (danger)</span>
                       </div>
                     </div>
-                    <div class="tim-title">
-                        <h3>Sliders</h3>
-                    </div>
-                    <div id="slider-default" class="slider-info"></div>
-                    <br>
-                    <div id="slider-range" class="slider-success"></div>
+
+					<div class="progress">
+						<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+
 
                 </div>
 
                 <div class="col-md-6">
-                     <div class="tim-title">
-                        <h3>Navigation Menu</h3>
+                    <div class="title">
+                        <h3>Navigation Tabs<h3>
                     </div>
 
-                    <ul class="nav nav-tabs">
-                      <li class="active"><a href="#Bla">Home</a></li>
-                      <li><a href="#nice">Profile</a></li>
-                      <li><a href="#best">Messages</a></li>
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" data-toggle="tab" href="#home" role="tab">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#profile" role="tab">Profile</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#settings" role="tab">Stats</a>
+						</li>
+					</ul>
 
-                    </ul>
-                    <br />
-                    <ul class="nav nav-pills">
-                     <!--  color-classes: "ct-blue", "ct-azure", "ct-orange", "ct-red", "ct-green"
-                           special-classes: "no-border"
-                     -->
-                      <li class="active"><a href="#gsdk">Home</a></li>
-                      <li><a href="#gsdk"> Profile</a></li>
-                      <li><a href="#gsdk">Messages</a></li>
-                    </ul>
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div class="tab-pane active" id="home" role="tabpanel">
+							I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at.
+						</div>
+						<div class="tab-pane" id="profile" role="tabpanel">
+							I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. I will be the leader of a company that ends up being worth billions of dollars, because I got the answers.
+						</div>
+						<div class="tab-pane" id="stats" role="tabpanel">
+							 So when you get something that has the name Kanye West on it, it’s supposed to be pushing the furthest possibilities. I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus.
+						</div>
+					</div>
 
-                    <div class="tim-title">
+					<br/>
+
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" data-toggle="tab" href="#account" role="tab">
+									<i class="fa fa-user-circle"></i> Account
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#messages" role="tab">
+									<i class="fa fa-paper-plane-o"></i> Messages
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#settings" role="tab">
+								<i class="fa fa-gear"></i> Settings</a>
+						</li>
+					</ul>
+
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div class="tab-pane fade show" id="account" role="tabpanel">
+							I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at.
+						</div>
+						<div class="tab-pane fade" id="messages" role="tabpanel">
+							I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. I will be the leader of a company that ends up being worth billions of dollars, because I got the answers.
+						</div>
+						<div class="tab-pane fade" id="settings" role="tabpanel">
+							 So when you get something that has the name Kanye West on it, it’s supposed to be pushing the furthest possibilities. I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus.
+						</div>
+					</div>
+
+                    <div class="title">
                         <h3>Pagination</h3>
                     </div>
                     <ul class="pagination">
@@ -471,7 +570,7 @@
         <div id="labels-badges">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="tim-title">
+                    <div class="title">
                         <h3>Labels</h3>
                         <span class="label label-default">Default</span>
                         <span class="label label-primary">Primary</span>
@@ -485,7 +584,7 @@
                 </div>
             </div> <!-- end row -->
         </div> <!-- end labels-badges -->
-        <div class="tim-title">
+        <div class="title">
             <h3>Notifications</h3>
         </div>
     </div>
@@ -518,7 +617,7 @@
 
 <div class="main">
     <div class="container tim-container">
-        <div class="tim-title">
+        <div class="title">
             <h2>Typography</h2>
         </div>
         <div id="typography">
@@ -584,7 +683,7 @@
         <!--   end typography -->
         <div class="space"></div>
         <div id="images">
-             <div class="tim-title">
+             <div class="title">
                 <h2>Images</h2>
             </div>
             <br>
@@ -611,13 +710,13 @@
         </div>
     <!--   end images -->
 
-        <div class="tim-title">
+        <div class="title">
             <h2>Javascript components</h2>
         </div>
 
         <div class="row">
             <div class="col-md-6">
-                <div class="tim-title">
+                <div class="title">
                     <h3>Modal</h3>
                 </div>
 
@@ -653,7 +752,7 @@
 
             <div class="col-md-6">
                 <div id="tooltips">
-                    <div class="tim-title">
+                    <div class="title">
                         <h3>Tooltips</h3>
                     </div>
                     <button type="button" class="btn btn-default btn-tooltip" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
@@ -670,7 +769,7 @@
 
         </div><!--  end row -->
 
-        <div class="tim-title">
+        <div class="title">
             <h3>Collapse</h3>
         </div>
         <div id="acordeon">
@@ -751,7 +850,7 @@
         </div><!--  end acordeon -->
 
         <div class="space"></div>
-        <div class="tim-title">
+        <div class="title">
             <h3>Carousel</h3>
         </div>
     </div>
@@ -880,14 +979,11 @@
 	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
 
 	<!-- Plugins -->
-
 	<!-- jQuery UI for creating sliders -->
 	<script src="assets/js/jquery-ui.min.js" type="text/javascript"></script>
 
-	<script src="assets/js/gsdk-checkbox.js"></script>
-	<script src="assets/js/gsdk-radio.js"></script>
 	<script src="assets/js/gsdk-bootstrapswitch.js"></script>
-	<script src="assets/js/get-shit-done.js"></script>
+	<script src="assets/js/gsdk.js"></script>
     <script src="assets/js/custom.js"></script>
 
 <script type="text/javascript">

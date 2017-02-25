@@ -1,9 +1,17 @@
 /*            Navigation menu                */
 .nav-pills {
-    > li + li {
+    .nav-item + .nav-item {
         margin-left: 0;
     }
-    > li > a {
+    .nav-item{
+        &:first-child .nav-link{
+            border-radius: $border-radius-base 0 0 $border-radius-base;
+        }
+        &:last-child .nav-link{
+            border-radius: 0 $border-radius-base $border-radius-base 0;
+        }
+    }
+    .nav-link{
         border: 1px solid $info-color;
         border-radius: 0;
         color: $info-color;
@@ -13,19 +21,22 @@
         &:focus{
             background-color: #F5F5F5;
         }
-    }
-    > li.active > a,
-    > li.active > a:hover,
-    > li.active > a:focus {
-        background-color: $info-color;
-        color: #FFFFFF !important;
-    }
-    > li:first-child > a{
-        border-radius: $border-radius-base 0 0 $border-radius-base;
-        margin: 0;
-    }
-    > li:last-child > a{
-        border-radius: 0 $border-radius-base $border-radius-base 0;
+
+        &.active{
+            &,
+            &:hover,
+            &:focus{
+                background-color: $info-color;
+                color: #FFFFFF !important;
+            }
+        }
+        &.disabled{
+            opacity: $disabled-opacity;
+            &:hover,
+            &:focus{
+                background-color: transparent;
+            }
+        }
     }
 }
 
@@ -119,4 +130,12 @@
 }
 .nav-pills.ct-red > li > a {
     @include pill-style($danger-color);
+}
+
+.tab-content{
+    padding: $padding-base;
+
+    .tab-pane{
+        font-size: .875rem;
+    }
 }

@@ -35,8 +35,14 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 .input-group-addon,
 .tagsinput,
 .navbar,
-.navbar .alert{
+.navbar .alert,
+.nav-pills .nav-link{
     @include transition($general-transition-time, linear);
+}
+
+// Fast transition
+.nav-tabs .nav-link{
+    @include transition($fast-transition-time, linear);
 }
 
 .fa{

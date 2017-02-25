@@ -1,120 +1,171 @@
-/*      Checkbox and radio         */
 .checkbox,
 .radio {
   margin-bottom: 12px;
-  padding-left: 32px;
   position: relative;
-  -webkit-transition: color 0.25s linear;
-  transition: color 0.25s linear;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 1.5;
-  color: #333333;
 }
-.checkbox input,
-.radio input {
-  outline: none !important;
-  display: none;
-}
-.checkbox .icons,
-.radio .icons {
-  color: $medium-gray;
-  display: block;
-  height: 20px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 20px;
-  text-align: center;
-  line-height: 21px;
-  font-size: 20px;
+
+.checkbox label,
+.radio label {
+  display: inline-block;
+  position: relative;
   cursor: pointer;
-  -webkit-transition: color 0.2s linear;
-  transition: color 0.2s linear;
+  padding-left: 22px;
+  margin-bottom: 0;
+  font-size: $font-size-base;
 }
 
-
-.checkbox .icons .first-icon,
-.radio .icons .first-icon,
-.checkbox .icons .second-icon,
-.radio .icons .second-icon {
-  display: inline-table;
+.checkbox label::before,
+.checkbox label::after,
+.radio label::before,
+.radio label::after{
+  font-family: 'FontAwesome';
+  content: "\f096";
+  display: inline-block;
   position: absolute;
+  width: 18px;
+  height: 18px;
   left: 0;
-  top: 0;
-  background-color: transparent;
-  margin: 0;
-  @include opacity(1);
-}
-.checkbox .icons .second-icon,
-.radio .icons .second-icon {
-  @include opacity(0);
-}
-.checkbox:hover,
-.radio:hover {
-  -webkit-transition: color 0.2s linear;
+  cursor: pointer;
+  line-height: 20px;
+  font-size: 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $medium-gray;
   transition: color 0.2s linear;
 }
-.checkbox:hover .first-icon,
-.radio:hover .first-icon {
- @include opacity(0);
+.checkbox label::before,
+.checkbox label::after{
+    top: 1px;
 }
-.checkbox:hover .second-icon,
-.radio:hover .second-icon {
- @include opacity (1);
-}
-.checkbox.checked,
-.radio.checked {
-  color: $info-color;
-}
-.checkbox.checked .first-icon,
-.radio.checked .first-icon {
-  opacity: 0;
-  filter: alpha(opacity=0);
-}
-.checkbox.checked .second-icon,
-.radio.checked .second-icon {
+
+ .checkbox label::after{
+  content: "";
+  text-align: center;
   opacity: 1;
-  filter: alpha(opacity=100);
-  color: $info-color;
-  -webkit-transition: color 0.2s linear;
-  transition: color 0.2s linear;
-}
-.checkbox.disabled,
-.radio.disabled {
-  cursor: default;
-  color: $medium-gray !important;
-}
-.checkbox.disabled .icons,
-.radio.disabled .icons {
-  color: $medium-gray !important;
-}
-.checkbox.disabled .first-icon,
-.radio.disabled .first-icon {
-  opacity: 1;
-  filter: alpha(opacity=100);
-}
-.checkbox.disabled .second-icon,
-.radio.disabled .second-icon {
-  opacity: 0;
-  filter: alpha(opacity=0);
-}
-.checkbox.disabled.checked .icons,
-.radio.disabled.checked .icons {
+  left: 0;
   color: $medium-gray;
 }
-.checkbox.disabled.checked .first-icon,
-.radio.disabled.checked .first-icon {
+
+.checkbox input[type="checkbox"],
+.radio input[type="radio"] {
   opacity: 0;
-  filter: alpha(opacity=0);
-}
-.checkbox.disabled.checked .second-icon,
-.radio.disabled.checked .second-icon {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  color: #D9D9D9;
+  left: 0px;
+  position: absolute;
+  top: 4px;
 }
 
+.checkbox input[type="checkbox"]:checked + label::after,
+.checkbox input[type="checkbox"]:not(:disabled):hover + label::after{
+    content: "\f046";
+}
+
+.checkbox input[type="checkbox"]:checked + label::after{
+    color: $info-color;
+}
+
+.checkbox input[type="checkbox"]:not(:disabled):hover + label::before,
+.checkbox input[type="checkbox"]:checked + label::before{
+    opacity: 0;
+}
+
+.checkbox input[type="checkbox"]:disabled + label,
+.radio input[type="radio"]:disabled + label,
+.checkbox input[type="checkbox"]:disabled:checked + label::after {
+    color: $medium-gray;
+}
+
+.checkbox input[type="checkbox"]:disabled + label::before,
+.checkbox input[type="checkbox"]:disabled + label::after{
+    cursor: not-allowed;
+}
+
+.checkbox input[type="checkbox"]:disabled + label,
+.radio input[type="radio"]:disabled + label{
+    cursor: not-allowed;
+}
+
+.checkbox.checkbox-circle label::before {
+  border-radius: 50%;
+}
+
+.checkbox.checkbox-inline {
+  padding-left:0;
+}
+
+.checkbox-primary input[type="checkbox"]:checked + label::before {
+  background-color: #428bca;
+  border-color: #428bca;
+}
+
+.checkbox-primary input[type="checkbox"]:checked + label::after {
+  color: #fff;
+}
+
+.checkbox-danger input[type="checkbox"]:checked + label::before {
+  background-color: #d9534f;
+  border-color: #d9534f;
+}
+
+.checkbox-danger input[type="checkbox"]:checked + label::after {
+  color: #fff;
+}
+
+.checkbox-info input[type="checkbox"]:checked + label::before {
+  background-color: #5bc0de;
+  border-color: #5bc0de;
+}
+
+.checkbox-info input[type="checkbox"]:checked + label::after {
+  color: #fff;
+}
+
+.checkbox-warning input[type="checkbox"]:checked + label::before {
+  background-color: #f0ad4e;
+  border-color: #f0ad4e;
+}
+
+.checkbox-warning input[type="checkbox"]:checked + label::after {
+  color: #fff;
+}
+
+.checkbox-success input[type="checkbox"]:checked + label::before {
+  background-color: #5cb85c;
+  border-color: #5cb85c;
+}
+
+.checkbox-success input[type="checkbox"]:checked + label::after {
+  color: #fff;
+}
+
+.radio label::before,
+.radio label::after {
+  content: "\f10c";
+}
+
+.radio input[type="radio"]:not(:disabled):hover + label::after,
+.radio input[type="radio"]:checked + label::after {
+    content: "\f192";
+    color: $medium-gray;
+}
+
+.radio input[type="radio"]:checked:not(:disabled):hover + label::after,
+.radio input[type="radio"]:checked + label::after{
+    color: $info-color;
+}
+
+
+.radio input[type="radio"]:disabled + label {
+  color: #ddd;
+}
+
+.radio input[type="radio"]:disabled + label::before,
+.radio input[type="radio"]:disabled + label::after {
+  color: #ddd;
+}
+
+.radio.radio-inline {
+  margin-top: 0;
+}
 
 
 /* ============================================================
@@ -132,14 +183,14 @@
     overflow: hidden;
     position: relative;
     text-align: left;
-    width: 60px;    
- 
-   -webkit-user-select: none;  
+    width: 60px;
+
+   -webkit-user-select: none;
    -moz-user-select: none;
    -ms-user-select: none;
    -o-user-select: none;
    user-select: none;
-     
+
     /*   this code is for fixing safari bug with hidden overflow for border-radius   */
     -webkit-mask: url('../img/mask.png') 0 0 no-repeat;
     -webkit-mask-size: 60px 24px;
@@ -173,7 +224,7 @@
 .has-switch > div label {
   background-color: #FFFFFF;
   @include icon-gradient (rgba(255,255,255,1), rgba(241,241,242,1));
-  
+
   box-shadow: 0 1px 1px #FFFFFF inset, 0 1px 1px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
@@ -243,4 +294,3 @@
     margin: 1px -13px;
     width: 26px;
 }
-
