@@ -41,7 +41,8 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 }
 
 // Fast transition
-.nav-tabs .nav-link{
+.nav-tabs .nav-link,
+.pagination .page-link{
     @include transition($fast-transition-time, linear);
 }
 

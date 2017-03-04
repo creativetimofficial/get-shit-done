@@ -28,7 +28,7 @@
 </head>
 <body>
 
-	<nav class="navbar navbar-full navbar-info navbar-fixed-top navbar-transparent" data-color-on-scroll="300px">
+	<nav class="navbar navbar-info fixed-top navbar-transparent" data-color-on-scroll="300px">
 		<div class="container">
 			<!-- <a class="navbar-brand" href="#">GSDK - wip</a> -->
 
@@ -451,35 +451,21 @@
                       </div>
                     </div>
                     <div class="progress">
-                      <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                      <div class="progress-bar bg-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
                         <span class="sr-only">60% Complete</span>
                       </div>
                     </div>
                     <div class="progress">
-                      <div class="progress-bar progress-bar-success" style="width: 35%">
+                      <div class="progress-bar bg-success" style="width: 35%">
                         <span class="sr-only">35% Complete (success)</span>
                       </div>
-                      <div class="progress-bar progress-bar-warning" style="width: 20%">
+                      <div class="progress-bar bg-warning" style="width: 20%">
                         <span class="sr-only">20% Complete (warning)</span>
                       </div>
-                      <div class="progress-bar progress-bar-danger" style="width: 10%">
+                      <div class="progress-bar bg-danger" style="width: 10%">
                         <span class="sr-only">10% Complete (danger)</span>
                       </div>
                     </div>
-
-					<div class="progress">
-						<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-					</div>
-					<div class="progress">
-						<div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-					</div>
-					<div class="progress">
-						<div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-					</div>
-					<div class="progress">
-						<div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-					</div>
-
 
                 </div>
 
@@ -562,6 +548,60 @@
                       <li><a href="#gsdk">5</a></li>
                       <li><a href="#gsdk">&raquo;</a></li>
                     </ul>
+
+					<nav aria-label="Page navigation example">
+						<ul class="pagination">
+					    	<li class="page-item">
+								<a class="page-link" href="#chapo">1</a>
+							</li>
+							<li class="page-item">
+								<a class="page-link" href="#chapo">...</a>
+							</li>
+					    	<li class="page-item">
+								<a class="page-link" href="#chapo">5</a>
+							</li>
+							<li class="page-item">
+								<a class="page-link" href="#chapo">6</a>
+							</li>
+							<li class="page-item">
+								<a class="page-link" href="#chapo">7</a>
+							</li>
+							<li class="page-item">
+								<a class="page-link" href="#chapo">8</a>
+							</li>
+							<li class="page-item">
+								<a class="page-link" href="#chapo">...</a>
+							</li>
+					    	<li class="page-item active">
+								<a class="page-link" href="#chapo">12</a>
+							</li>
+					  	</ul>
+
+						<ul class="pagination">
+					    	<li class="page-item">
+					      		<a class="page-link" href="#chapo" aria-label="Previous">
+					        		<span aria-hidden="true">&laquo;</span>
+					        		<span class="sr-only">Previous</span>
+					      		</a>
+					    	</li>
+					    	<li class="page-item">
+								<a class="page-link" href="#chapo">1</a>
+							</li>
+					    	<li class="page-item">
+								<a class="page-link" href="#chapo">2</a>
+							</li>
+					    	<li class="page-item active">
+								<a class="page-link" href="#chapo">3</a>
+							</li>
+					    	<li class="page-item">
+					      		<a class="page-link" href="#chapo" aria-label="Next">
+					        		<span aria-hidden="true">&raquo;</span>
+					        		<span class="sr-only">Next</span>
+					      		</a>
+					    	</li>
+					  	</ul>
+					</nav>
+
                 </div>
             </div>
         </div><!--  end sliders-navigation -->

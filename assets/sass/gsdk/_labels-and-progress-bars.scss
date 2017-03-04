@@ -34,28 +34,29 @@
 .label.label-fill{
     color: #FFFFFF;
 }
-.label-primary.label-fill, .progress-bar, .progress-bar-primary{
+.label-primary.label-fill, .progress-bar{
    background-color: $primary-color;
 }
-.label-info.label-fill, .progress-bar-info{
+.label-info.label-fill{
     background-color: $info-color;
 }
-.label-success.label-fill, .progress-bar-success{
+.label-success.label-fill{
    background-color: $success-color;
 }
-.label-warning.label-fill, .progress-bar-warning{
+.label-warning.label-fill{
    background-color: $warning-color;
 }
-.label-danger.label-fill, .progress-bar-danger{
+.label-danger.label-fill{
    background-color: $danger-color;
 }
 .label-default.label-fill{
    background-color: #999999;
 }
 .progress {
-    background-color: #E5E5E5;
-    border-radius: 3px;
+    background-color: $light-gray;
+    border-radius: $border-radius-small;
     box-shadow: none;
+    margin-bottom: $margin-base-vertical + 5;
 }
 
 .progress-bar{

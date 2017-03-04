@@ -41,20 +41,36 @@
 }
 
 // style for pagination
+.page-link{
+    border-radius: $border-radius-extreme * 2;
+    margin: 0 2px;
+    color: $default-states-color;
+    font-size: $font-size-base;
+
+    &:hover,
+    &:focus{
+        color: $default-states-color;
+    }
+    .page-item.active &{
+        background-color: $primary-color;
+        color: $white-color;
+        border: 0;
+        padding: .5625rem .8125rem;
+    }
+
+    .page-item:last-child &,
+    .page-item:first-child &{
+        border-radius: $border-radius-extreme * 2;
+    }
+
+    .pagination-info .page-item.active &{
+        background: $info-color;
+    }
+}
+
 .pagination.pagination-no-border > li > a,
 .pagination.pagination-no-border > li > span{
     border: 0;
-}
-.pagination > li > a, .pagination > li > span, .pagination > li:first-child > a, .pagination > li:first-child > span, .pagination > li:last-child > a, .pagination > li:last-child > span{
-    border-radius: 50%;
-    margin: 0 2px;
-    color: $default-states-color;
-}
-.pagination > li.active > a, .pagination > li.active > span, .pagination > li.active > a:hover, .pagination > li.active > span:hover, .pagination > li.active > a:focus, .pagination > li.active > span:focus {
-    background-color: $info-color;
-    border: 0;
-    color: #FFFFFF;
-    padding: 7px 13px;
 }
 
 .nav-pills.ct-blue > li.active > a,
