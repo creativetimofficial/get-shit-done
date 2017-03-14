@@ -41,11 +41,17 @@
 }
 
 // style for pagination
+.pagination{
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
 .page-link{
     border-radius: $border-radius-extreme * 2;
     margin: 0 2px;
     color: $default-states-color;
     font-size: $font-size-base;
+    min-width: 35px;
+    text-align: center;
 
     &:hover,
     &:focus{
@@ -53,9 +59,8 @@
     }
     .page-item.active &{
         background-color: $primary-color;
+        border-color: $primary-color;
         color: $white-color;
-        border: 0;
-        padding: .5625rem .8125rem;
     }
 
     .page-item:last-child &,
@@ -65,12 +70,25 @@
 
     .pagination-info .page-item.active &{
         background: $info-color;
+        border-color: $info-color;
     }
-}
+    .pagination-success .page-item.active &{
+        background: $success-color;
+        border-color: $success-color;
+    }
+    .pagination-warning .page-item.active &{
+        background: $warning-color;
+        border-color: $warning-color;
+    }
+    .pagination-danger .page-item.active &{
+        background: $danger-color;
+        border-color: $danger-color;
+    }
 
-.pagination.pagination-no-border > li > a,
-.pagination.pagination-no-border > li > span{
-    border: 0;
+    .pagination-no-border &{
+        border: 0;
+        min-width: 33px;
+    }
 }
 
 .nav-pills.ct-blue > li.active > a,
@@ -148,6 +166,11 @@
     @include pill-style($danger-color);
 }
 
+.nav-tabs{
+    i{
+        margin-right: .3125rem;
+    }
+}
 .tab-content{
     padding: $padding-base;
 

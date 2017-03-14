@@ -372,3 +372,7 @@
 #sectionInputs label{
     display: block;
 }
+
+.pagination{
+    margin-top: 30px;
+}

@@ -11,7 +11,6 @@
     font-size: $font-size-base;
     box-shadow: 0 12px 20px -12px rgba(0,0,0,0.22);
 
-    padding: 0;
     transition: all 0.4s;
     -webkit-transition: all 0.4s;
 
@@ -31,6 +30,9 @@
            height: 50px;
            width: 50px;
            float: left;
+       }
+       .logo-container{
+           display: flex;;
        }
        .logo img{
            width: 100%;
