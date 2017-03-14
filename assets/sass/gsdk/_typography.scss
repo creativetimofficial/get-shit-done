@@ -6,7 +6,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, .btn-s
     font-family: "Helvetica Neue","Open Sans",Arial,sans-serif;
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4{
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
     font-weight: $font-weight-normal;
     margin: $margin-large-vertical 0 $margin-base-vertical;
 }
@@ -52,7 +52,7 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 h1 .subtitle{
     display: block;
     font-family: 'Grand Hotel',cursive;
-    margin: 0 0 $margin-large-vertical;   
+    margin: 0 0 $margin-large-vertical;
 }
 
 .text-primary, .text-primary:hover{
@@ -70,4 +70,3 @@ h1 .subtitle{
 .text-danger, .text-danger:hover{
     color: $danger-color !important;
 }
-
