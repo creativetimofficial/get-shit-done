@@ -4,13 +4,10 @@
     .panel-title a:hover, .panel-title a:focus{
         text-decoration: none;
     }
-    .gsdk-collapse{
-        display: block;
-        height: 0px;
-        visibility: visible;
-        overflow: hidden;
-        transition: all 400ms;
-    }
+
+}
+.card{
+    font-size: $font-size-base;
 }
 .card-collapse{
     border-radius: 0;
@@ -20,6 +17,8 @@
     a{
         text-decoration: none;
         color: inherit;
+        display: flex;
+        padding: .75rem $padding-base;
 
         &:hover,
         &:focus{
@@ -32,15 +31,27 @@
     }
     .card-header{
         border: 0;
+        padding: 0;
         background-color: $white-color;
     }
     .card-block{
         box-shadow: inset 0 7px 10px -7px rgba(0,0,0,0.14);
         border-top: 1px solid $medium-gray;
+        padding: $padding-base;
     }
 
     & + .card-collapse{
         margin-top: 0.125rem;
         margin-bottom: 0.125rem;
     }
+
+    .collapse-preview{
+        position: relative;
+        height: 0;
+        overflow: hidden;
+        -webkit-transition: height .35s ease;
+        -o-transition: height .35s ease;
+        transition: height .35s ease;
+    }
+
 }

@@ -28,52 +28,6 @@ $(document).ready(function(){
         }
     });
 
-    // $('[data-toggle="gsdk-collapse"]').hover(
-    // function(){
-    //         console.log('on hover');
-    //         var thisdiv = $(this).attr("data-target");
-    //
-    //         if(!$(this).hasClass('state-open')){
-    //             $(this).addClass('state-hover');
-    //             $(thisdiv).css({
-    //                 'height':'30px'
-    //             });
-    //         }
-    //
-    //     },
-    //     function(){
-    //         var thisdiv = $(this).attr("data-target");
-    //         $(this).removeClass('state-hover');
-    //
-    //         if(!$(this).hasClass('state-open')){
-    //             $(thisdiv).css({
-    //                 'height':'0px'
-    //             });
-    //         }
-    //     }
-    // );
-    //
-    // $('[data-toggle="gsdk-collapse"]').click(
-    // function(event){
-    //         event.preventDefault();
-    //
-    //         var thisdiv = $(this).attr("data-target");
-    //         var height = $(thisdiv).children('.panel-body').height();
-    //
-    //         if($(this).hasClass('state-open')){
-    //             $(thisdiv).css({
-    //                 'height':'0px',
-    //             });
-    //             $(this).removeClass('state-open');
-    //         } else {
-    //             $(thisdiv).css({
-    //                 'height':height,
-    //             });
-    //             $(this).addClass('state-open');
-    //         }
-    //     }
-    // );
-
     navbar_scroll_distance = $('.navbar[data-color-on-scroll]').attr('data-color-on-scroll') || '500px';
 
     if($('.navbar[data-color-on-scroll]').length != 0){
@@ -87,11 +41,76 @@ $(document).ready(function(){
     }
 });
 
-$(function () {
-    // $('[data-toggle="gsdk-collapse"]').each(function () {
-    //     var thisdiv = $(this).attr("data-target");
-    //     $(thisdiv).addClass("gsdk-collapse");
-    // });
+$(document).on('mouseover', '[data-toggle="collapse-preview"]',
+    function(event){
+        event.preventDefault();
+
+        var targetCollapseId = $(this).attr("href");
+        var $targetCollapse = $(targetCollapseId);
+
+        if(!$(this).hasClass('state-open')){
+            $(this).addClass('state-hover');
+
+            $targetCollapse.addClass('collapse-preview').removeClass('collapse');
+
+            setTimeout(function(){
+                $targetCollapse.css({'height':'30px'});
+            }, 30);
+
+        }
+}).on('mouseout','[data-toggle="collapse-preview"]',
+    function(event){
+        event.preventDefault();
+
+        var targetCollapseId = $(this).attr("href");
+        var $targetCollapse = $(targetCollapseId);
+
+        $(this).removeClass('state-hover');
+
+        if(!$(this).hasClass('state-open')){
+            $targetCollapse.css({
+                'height':'0px'
+            });
+            setTimeout(function(){
+                $targetCollapse.addClass('collapse').removeClass('collapse-preview');
+            }, 350);
+
+       }
+}).on('click','[data-toggle="collapse-preview"]',
+    function(event){
+        event.preventDefault();
+
+        var targetCollapseId = $(this).attr("href");
+        var $targetCollapse = $(targetCollapseId);
+
+        if($targetCollapse.hasClass('collapsing')){
+            return;
+        }
+
+        $targetCollapse.addClass('collapsing').removeClass('collapse');
+        var height = $targetCollapse.children('.card-block').outerHeight();
+
+        if($(this).hasClass('state-open')){
+            $targetCollapse.css({
+                'height':'0px',
+            });
+
+            $(this).removeClass('state-open');
+            setTimeout(function(){
+                $targetCollapse.addClass('collapse').removeClass('collapsing show');
+            }, 350);
+
+        } else {
+            $targetCollapse.css({
+              'height':height,
+            });
+            $(this).addClass('state-open');
+
+            setTimeout(function(){
+                $targetCollapse.addClass('collapse show').removeClass('collapsing');
+            }, 350);
+
+        }
 
 });
 
