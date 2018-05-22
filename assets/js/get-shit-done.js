@@ -1,19 +1,3 @@
-/*!
-    
- =========================================================
- * Get Shit Done Kit - v1.4.1.0
- =========================================================
- 
- * Product Page: http://www.creative-tim.com/product/get-shit-done-kit
- * Copyright 2017 Creative Tim (http://www.creative-tim.com)
- * Licensed under MIT (https://github.com/timcreative/get-shit-done/blob/master/LICENSE.md)
- 
- =========================================================
- 
- * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
- 
- */
-
 searchVisible = 0;
 transparent = true;
 
@@ -110,7 +94,14 @@ $(document).scroll(function() {
     }
 });
 
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+ga('create', 'UA-46172202-1', 'auto');
+ga('send', 'pageview');
+    
 
 
 
