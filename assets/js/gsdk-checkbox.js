@@ -24,7 +24,7 @@
         , $parent = $el.closest('.checkbox');
         
         $el.prop('disabled') && $parent.addClass('disabled');   
-        $el.prop('checked') && $parent.addClass('checked');
+        $el.attr('checked') && $parent.addClass('checked');
     }  
     
   , toggle: function () {    
