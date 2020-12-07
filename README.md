@@ -1,9 +1,3 @@
-<a href="https://www.creative-tim.com/campaign?utm_medium=social&utm_source=github&utm_campaign=cm-readme-2020">
-<img border="0" alt="Creative Tim Cyber Monday Offer" src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/cm-github-banner.jpg" >
-</a>
-
-
-
 # [Get Shit Done Kit - Free Bootstrap UI Kit](http://demos.creative-tim.com/get-shit-done/index.html)
 
 ![Get Shit Done Kit](http://s3.amazonaws.com/creativetim_bucket/products/17/original/GSDK_thumbnail3.png?1431435570 "Get Shit Done Kit")
